@@ -1,0 +1,1 @@
+与赞助列表相关的活动。 {% data reusables.webhooks.action_type_desc %} For more information, see "[About GitHub Sponsors](/github/supporting-the-open-source-community-with-github-sponsors/about-github-sponsors)".

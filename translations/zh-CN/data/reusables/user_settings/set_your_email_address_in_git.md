@@ -1,0 +1,1 @@
+在 Git 中设置电子邮件地址。 You can use {% if currentVersion == "free-pro-team@latest"%}your [{% data variables.product.product_name %}-provided `no-reply` email address](/articles/setting-your-commit-email-address) or {% endif %}any email address.

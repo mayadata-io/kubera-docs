@@ -1,0 +1,1 @@
+`integrante`|`objeto` | O [usuário](/v3/users/) que foi adicionado. `alterações`|`objeto`| As alterações nas permissões do colaborador se a ação foi `editada`. `changes[old_permission][from]`|`string` | As permissões anteriores do colaborador se a ação foi `editada`.
