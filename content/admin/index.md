@@ -1,29 +1,20 @@
 ---
 title: Kubera Propel
+shortTitle: Kubera Propel
+intro: 'Get {% data variables.product.prodname_desktop %} set up to manage your project work. Authenticate to {% data variables.product.prodname_dotcom_the_website %} or {% data variables.product.prodname_enterprise %}, keep the app up-to-date, and review your preferred settings.'
 redirect_from:
-  - /enterprise/admin/hidden/migrating-from-github-fi/
-  - /enterprise/admin
-intro: 'Step-by-step guides for organizational administrators, system administrators, and security specialists who are deploying, configuring, and managing a GitHub Enterprise instance.'
+  - /admin
 versions:
-  enterprise-server: '*'
+  free-pro-team: '*'
 ---
 
-{% link_with_intro /overview %}
 
-{% link_with_intro /installation %}
+### Table of Contents
 
-{% link_with_intro /configuration %}
-
-{% link_with_intro /authentication %}
-
-{% link_with_intro /user-management %}
-
-{% link_with_intro /policies %}
-
-{% link_with_intro /enterprise-management %}
-
-{% link_with_intro /github-actions %}
-
-{% link_with_intro /packages %}
-
-{% link_with_intro /enterprise-support %}
+{% topic_link_in_list /introduction %}
+{% topic_link_in_list /architecture %}
+{% topic_link_in_list /getting-started-with-kubera-propel %}
+{% topic_link_in_list /adding-new-kubernetes-cluster-to-propel %}
+{% topic_link_in_list /benchmarking-your-storage %}
+{% topic_link_in_list /performance-tuning %}
+{% topic_link_in_list /troubleshooting %}
