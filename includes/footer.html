@@ -2,6 +2,7 @@
   <div class="container-xl px-3 px-md-6">
     <div class="d-flex flex-wrap py-5 mb-5">
       <div class="col-12 col-lg-4 mb-5">
+      <!--
         <a href="https://github.com/" class="text-gray-dark" aria-label="Go to GitHub homepage">
           {% octicon "logo-github" height="30" %}
         </a>
@@ -48,7 +49,28 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12 pb-3">
+        <div class="row">
+          <div class="col-md-12 col-lg-9">
+            <p class="pb-3 text-uppercase font-weight-bold">Interested in our newsletter?</p>
+            <form class="form-inline py-3 py-md-0" [formGroup]="leadForm" (ngSubmit)="formSubmit()"
+              id={{GTM.TRIGGERS.NEWSLETTER}} novalidate>
+              <div class="form-group mr-sm-3 pb-3 pb-md-0 email--input-div">
+                <input type="email" class="form-control form-control-lg newsletter-input" aria-describedby="emailHelp"
+                  placeholder="Enter Your Email" maxlength="250" name="email" id="email" formControlName="email"
+                  [ngClass]="{
+                    'valid_input':email.valid && (email.touched || email.dirty),
+                    'invalid_input':email.invalid && (email.touched || email.dirty
+                    || isFormEmpty)
+                    }">
+              </div>
+              <button type="submit" class="btn btn-tertiary" id="slacksubmit" data-toggle="modal"
+                data-target="#openebsnewsletterthanks" [disabled]="!leadForm.valid">Subscribe</button>
+            </form>
+          </div>
   <div class="bg-gray-light">
     <div class="container-xl px-3 px-md-6 f6 py-4 d-sm-flex flex-justify-between flex-row-reverse flex-items-center">
       <ul class="list-style-none d-flex flex-items-center mb-3 mb-sm-0 lh-condensed-ultra">
@@ -72,7 +94,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18" class="d-block" height="18"><path d="M3.94 2A2 2 0 1 1 2 0a2 2 0 0 1 1.94 2zM4 5.48H0V18h4zm6.32 0H6.34V18h3.94v-6.57c0-3.66 4.77-4 4.77 0V18H19v-7.93c0-6.17-7.06-5.94-8.72-2.91z" fill="currentColor"></path></svg>
           </a>
         </li>
-        <li>
+   <!--     <li>
           <a href="https://github.com/github" title="GitHub's organization" style="color: #959da5;">
             {% octicon "mark-github" height="20" %}
           </a>
@@ -82,7 +104,7 @@
         <li class="mr-3">&copy; {{ "now" | date: "%Y" }} GitHub, Inc.</li>
         <li class="mr-3"><a href="/articles/github-terms-of-service/" class="link-gray">{% data ui.footer.terms %} </a></li>
         <li><a href="/articles/github-privacy-statement/" class="link-gray">{% data ui.footer.privacy %} </a></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </div>

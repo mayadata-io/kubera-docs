@@ -35,6 +35,7 @@
 
   <!-- Explore by Area -->
   <section class="container-xl pb-lg-4 my-8 px-3 px-md-6">
+    <!--
     <div class="">
       <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">{% data ui.homepage.explore_by_product %}</h3>
       <div class="d-flex flex-wrap gutter gutter-xl-spacious">
@@ -42,34 +43,48 @@
       {% if product.versions contains currentVersion or currentVersion == 'homepage' %}
       <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
         <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href="{% unless product.external %}/{{ currentLanguage }}{% endunless %}{% if product.versions contains currentVersion %}/{{currentVersion}}/{{product.id}}{% else %}{{product.href}}{% endif %}">{{ product.name }}
-      {% if product.external %}
-        <span class="ml-1">{% octicon "link-external" %}</span>
-      {% endif %}
       </a>
       </div>
       {% endif %}
       {% endfor %}
+      </div>
+    </div>
+    -->
+    <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">Explore by Area</h3>
+      <div class="d-flex flex-wrap gutter gutter-xl-spacious">
+
+      <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
+        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname}}/free-pro-team@latest/desktop>Kubera
+      </a>
+      </div>
+            <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
+        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href=>GettingSupport
+      </a>
+      </div>
+            <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
+        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname }}>KuberaCommunity
+      </a>
+      </div>
       </div>
     </div>
   </section>
     <!-- Explore by module -->
+    
   <section class="container-xl pb-lg-4 my-8 px-3 px-md-6">
     <div class="">
-      <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">{% data ui.homepage.explore_by_product %}</h3>
+      <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">Explore by Module</h3>
       <div class="d-flex flex-wrap gutter gutter-xl-spacious">
-      {% for product in activeProducts %}
-      {% if product.versions contains currentVersion or currentVersion == 'homepage' %}
+
       <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
-        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href="{% unless product.external %}/{{ currentLanguage }}{% endunless %}{% if product.versions contains currentVersion %}/{{currentVersion}}/{{product.id}}{% else %}{{product.href}}{% endif %}">{{ product.name }}
-      {% if product.external %}
-        <span class="ml-1">{% octicon "link-external" %}</span>
-      {% endif %}
+        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname}}/enterprise-server@2.22/admin>KuberaPortal
       </a>
       </div>
-      {% endif %}
-      {% endfor %}
+            <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
+        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname}}/free-pro-team@latest/desktop>KuberaChoas
+      </a>
       </div>
     </div>
+    
   </section>
 
   <div class="px-3 px-md-6 container-xl">

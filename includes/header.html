@@ -63,47 +63,21 @@
                   </div>
                 </details>
               </div>
-
-              <!-- Versions picker that only appears in the header on homepage/versioned homepages -->
-              {% include homepage-version-switcher %}
-
-              <div class="d-md-inline-block">
-
-                <!-- Language picker - 'English', 'Japanese', etc -->
-                {% unless error == '404' or !page.hidden %}
-                  <div class="border-top border-md-top-0 py-2 py-md-0 d-md-inline-block">
-                    <details class="dropdown-withArrow position-relative details details-reset mr-md-3 close-when-clicked-outside">
-                      <summary class="py-2 text-gray-dark" role="button" aria-label="Toggle languages list">
-                        <div class="d-flex flex-items-center flex-justify-between">
-                          {% if languages[page.languageCode].nativeName %}
-                            {{ languages[page.languageCode].nativeName }} ({{ languages[page.languageCode].name }})
-                          {% else %}
-                            {{ languages[page.languageCode].name }}
-                          {% endif %}
-                          <svg class="arrow ml-md-1" width="14px" height="8px" viewBox="0 0 14 8" xml:space="preserve" fill="none" stroke="#1B1F23"><path d="M1,1l6.2,6L13,1"></path></svg>
-                        </div>
-                      </summary>
-                      <div id="languages-selector" class="position-md-absolute nav-desktop-langDropdown p-md-4 right-md-n4 top-md-6" style="z-index: 6;">
-                      {% for languageVariant in page.languageVariants %}
-                        {% unless languages[languageVariant.code].wip %}
-                          <a
-                            href="{{ languageVariant.href }}"
-                            class="d-block py-2 no-underline {% if currentPath == languageVariant.href %}active link-gray{% else %}link-gray-dark{% endif %}"
-                            style="white-space: nowrap"
-                          >
-                            {% if languages[languageVariant.code].nativeName %}
-                              {{ languages[languageVariant.code].nativeName }} ({{ languageVariant.name }})
-                            {% else %}
-                              {{ languageVariant.name }}
-                            {% endif %}
-                          </a>
-                        {% endunless %}
-                      {% endfor %}
-                      </div>
-                    </details>
-                  </div>
-                {% endunless %}
-
+              <!--
+              <!-- products -->
+              
+    <div class="">
+      <div class="d-flex">
+      {% for product in activeProducts %}
+      {% if product.versions contains currentVersion or currentVersion == 'homepage' %}
+      <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
+        <a class="" href="{% unless product.external %}/{{ currentLanguage }}{% endunless %}{% if product.versions contains currentVersion %}/{{currentVersion}}/{{product.id}}{% else %}{{product.href}}{% endif %}">{{ product.name }}
+      </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+      </div>
+    </div>
                 <!-- GitHub.com homepage and 404 page has a stylized search; Enterprise homepages do not -->
                 {% if page.relativePath != 'index.md' and error != '404' %}
                 <div class="pt-3 pt-md-0 d-md-inline-block ml-md-3 bord'er-top border-md-top-0">
