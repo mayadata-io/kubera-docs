@@ -1,0 +1,14 @@
+.font-weight-300 {
+    font-weight: 300;
+}
+.font-roboto-slab {
+    font-family: Roboto Slab;
+}
+.font-bold {
+    font-weight: bold;
+}
+.hero-section-title {
+    font-size: 50px;
+    @extend .font-roboto-slab;
+    @extend .font-bold;
+}
