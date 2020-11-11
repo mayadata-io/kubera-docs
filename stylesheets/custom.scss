@@ -12,3 +12,15 @@
     @extend .font-roboto-slab;
     @extend .font-bold;
 }
+.subscribe-newsletter-input{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid ;
+    box-shadow: none;
+    width: 350px !important;
+    color: #e9720f !important;
+}
+.btn-submit-newsletter{
+    background: linear-gradient(273.96deg, #E9700D 7.39%, #F39242 99.41%);
+    color: #ffff;
+}
