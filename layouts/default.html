@@ -5,7 +5,14 @@
   <body class="d-lg-flex">
     {% include sidebar %}
 
-    <main class="width-full">
+    <main class="width-full text-white" style="
+        background-color: #1F173C;
+    background-image: url(/assets/images/landing.png);
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;    
+  ">
       {% include header %}
       {% include deprecation-banner %}
       {% if page.relativePath == 'index.md' %}

@@ -1,5 +1,7 @@
 header:
   github_docs: Kubera Docs
+  title: Kubera
+  post_title: Docs
   contact: Contact
   notices:
     ghe_release_candidate:
@@ -20,7 +22,7 @@ header:
       most up-to-date and accurate information, please visit our <a href="https://developer.github.com">developer documentation</a>.
 search:
   need_help: Need help?
-  placeholder: Search topics, products...
+  placeholder: Search documentation, support topics of Kubera
 homepage:
   explore_by_product: Explore by Area
   version_picker: Version

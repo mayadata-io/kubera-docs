@@ -1,6 +1,6 @@
 .sidebar {
   width: 260px;
-  background-color: $blue-900;
+  background-color: #1E173C;
   position: sticky;
   top: 0;
   padding-bottom: $spacer-5;
@@ -14,7 +14,7 @@
 }
 
 .sidebar-background-color {
-  background-color: $blue-900;
+  background-color: #1E173C;
 }
 
 .sidebar-products > li {
@@ -92,4 +92,13 @@
 
 .sidebar-maptopic > ul {
   display: none;
+}
+.product{
+  font-size: 24px;
+  .title{
+   font-weight: 700;
+  }
+  .post-title{
+    font-weight: 200;
+  }
 }

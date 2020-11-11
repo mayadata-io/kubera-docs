@@ -56,7 +56,7 @@
 }
 
 .extended-markdown.note pre {
-  background: none;
+  // background: none;
   padding: 10px 10px 10px 0;
   margin-bottom: 0;
 }
@@ -145,15 +145,26 @@ pre .bluebox {
 
 /* Accessibility color contrast */
 .btn-mktg {
-  background-color: $blue-500;
   align-items: center;
   justify-content: center;
+  color: #ffff;
 }
 
 /* Accessibility color contrast */
 .btn-outline-mktg {
-  background-color: white;
-  color: $blue-500;
+  color:#fff;
+  margin: auto;
+  border:3px solid transparent;
+  // border-radius:50px;
+  text-align:center;
+  // font-size:30px;
+  background:
+    url(/assets/images/landing.png) padding-box fixed,
+    linear-gradient(90deg, rgba(102, 61, 219, 0.72) 0%, rgba(169, 61, 219, 0.97) 100%) border-box;
+  background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
 }
 
 /* Accessibility color contrast */
