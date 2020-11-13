@@ -12,15 +12,64 @@
     @extend .font-roboto-slab;
     @extend .font-bold;
 }
-.subscribe-newsletter-input{
+.subscribe-newsletter-input {
     background-color: transparent !important;
     border: none;
-    border-bottom: 1px solid ;
+    border-bottom: 1px solid;
     box-shadow: none;
     width: 350px !important;
-    color: #e9720f !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+    border-radius: 0px;
 }
-.btn-submit-newsletter{
-    background: linear-gradient(273.96deg, #E9700D 7.39%, #F39242 99.41%);
+.btn-submit-newsletter {
+    background: linear-gradient(273.96deg, #e9700d 7.39%, #f39242 99.41%);
     color: #ffff;
 }
+.explore-product-btn {
+    // @extend .btn ;
+    flex: 1 0 30%;
+    margin: 10px;
+    padding: 30px 20px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    color: #ffff;
+    font-size: 20px;
+    line-height: 26px;
+    // @extend .flex-wrap;
+    // @extend .flex-justify-around;
+    // background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+    // backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    //
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #473389;
+    // border: 2.03px solid;
+    // border-image-source: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+}
+.explore-product-btn:hover {
+    background: linear-gradient(82.94deg, rgba(51, 47, 61, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    // color: #ffff;
+    // background: transparent;
+    border: 2.03px solid;
+    border-image: linear-gradient(82.94deg, rgba(102, 61, 219, 0.72) 17.14%, rgba(169, 61, 219, 0.97) 79.8%) 1;
+}
+.getting-started-articles-list {
+    li{
+        padding: 10px 20px;
+        // margin: 10px;
+        margin: 10px 15px 10px 0px;
+    }
+    li:nth-child(odd) {
+        background: rgba(255, 255, 255, 0.05);
+        // color: red;
+    }
+    li:nth-child(even) {
+        // color: blue;
+    }
+}
+

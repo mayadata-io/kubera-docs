@@ -6,12 +6,12 @@
     {% include sidebar %}
 
     <main class="width-full text-white" style="
-        background-color: #1F173C;
+    background-color: #1F173C;
     background-image: url(/assets/images/landing.png);
     background-blend-mode: color-dodge;
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;    
+    background-position: unset;
+    background-size: auto;
   ">
       {% include header %}
       {% include deprecation-banner %}
@@ -20,7 +20,6 @@
       {% else %}
         {% include article %}
       {% endif %}
-      {% include support %}
       {% include footer %}
     </main>
   </body>

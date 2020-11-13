@@ -23,7 +23,17 @@ Form and inputs using .ais- prefix gets added by Algolia InstantSearch.js */
   font-size: 16px;
   @extend .form-control;
   border:none;
-  background-color: rgba(35, 26, 66, 0.65);
+  background-color: rgba(13, 12, 18, 0.9);
+  :focus{
+    box-shadow: none !important;
+    border: none !important;
+    border-color: transparent;
+  }
+  :active{
+    box-shadow: none;
+    border: none !important;
+    border-color: transparent ;
+  }
 }
 
 .ais-SearchBox-reset {
