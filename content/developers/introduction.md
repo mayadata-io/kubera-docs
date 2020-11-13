@@ -8,3 +8,4 @@ versions:
 ---
 ## Introduction
 <span style="color: white;">Kubera Chaos</span>
+<img class="image-with-border" src="/assets/images/developer/image (3).png">
