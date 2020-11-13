@@ -179,3 +179,12 @@ img[src*="https://github.githubassets.com/images/icons/emoji"] {
     margin-bottom: 0;
   }
 }
+
+
+/* Add border to images-------------------------------------------------------------*/
+.image-with-border{
+  padding: calc(12px - 2px);
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #EFEFF2;
+}
