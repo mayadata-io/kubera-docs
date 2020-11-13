@@ -1,8 +1,7 @@
-
+dist: xenial
 env:
   global:
     - COMMIT=${TRAVIS_COMMIT::6}
-sudo: required
 services:
 - docker
 script:
