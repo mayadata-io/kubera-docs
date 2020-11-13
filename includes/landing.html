@@ -1,21 +1,22 @@
-  <!-- Hero -->
-  <section id="landing">
-    <div class="container-xl  d-flex px-4 pb-6 pb-lg-9">
-      <div class="gutter gutter-xl-spacious pt-6 pt-lg-0 d-lg-flex flex-row-reverse flex-items-left">
-        <div class="col-lg-12 col-12 mt-6">
-          <div class="mb-5">
+<!-- Hero -->
+<section id="landing">
+  <div class="container-xl  d-flex px-4 pb-6 pb-lg-9">
+    <div class="gutter gutter-xl-spacious pt-6 pt-lg-0 d-lg-flex flex-row-reverse flex-items-left">
+      <div class="col-lg-12 col-12 mt-6">
+        <div class="mb-5">
           <span class="hero-section-title">Kubera Documentation</span>
         </div>
-          {% include search-form %}
-        </div>
+        {% include search-form %}
       </div>
-      <div id="search-results-container" class="mt-4 d-none" data-active-class="d-block" data-inactive-class="d-none"></div>
     </div>
-  </section>
+    <div id="search-results-container" class="mt-4 d-none" data-active-class="d-block" data-inactive-class="d-none">
+    </div>
+  </div>
+</section>
 
-  <!-- Explore by Area -->
-  <section class="container-xl pb-lg-4 my-8 px-3 px-md-6">
-    <!--
+<!-- Explore by Area -->
+<section class="container-xl pb-lg-4 my-8 px-3 px-md-6">
+  <!--
     <div class="">
       <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">{% data ui.homepage.explore_by_product %}</h3>
       <div class="d-flex flex-wrap gutter gutter-xl-spacious">
@@ -30,8 +31,22 @@
       </div>
     </div>
     -->
-    <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">Explore by Area</h3>
-      <div class="d-flex flex-wrap gutter gutter-xl-spacious">
+  <h3 class="text-mono f5 text-normal text-white text-md-left mb-4">Explore by product</h3>
+
+  <div class="width-full">
+    <div>
+      <div class="d-flex flex-wrap">
+        <button class="explore-product-btn">Title-1</button>
+        <button class="explore-product-btn">Title-2</button>
+        <button class="explore-product-btn">Title-3</button>
+        <button class="explore-product-btn">Title-4</button>
+        <button class="explore-product-btn">Title-5</button>
+        <button class="explore-product-btn">Title-6</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="d-flex flex-wrap gutter gutter-xl-spacious">
 
       <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
         <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname}}/free-pro-team@latest/desktop>Kubera
@@ -45,28 +60,52 @@
         <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname }}>KuberaCommunity
       </a>
       </div>
-      </div>
-    </div>
-  </section>
-    <!-- Explore by module -->
-    
-  <section class="container-xl pb-lg-4 my-8 px-3 px-md-6">
-    <div class="">
-      <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">Explore by Module</h3>
-      <div class="d-flex flex-wrap gutter gutter-xl-spacious">
+      </div> -->
+  </div>
+</section>
+<!-- Explore by module -->
+
+<section class="container-xl pb-lg-4 my-8 px-3 px-md-6">
+  <!-- <div class="">
+    <h3 class="text-mono f5 text-normal text-white text-md-left mb-4">Explore by module</h3>
+    <div class="d-flex flex-wrap gutter gutter-xl-spacious">
 
       <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
-        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname}}/enterprise-server@2.22/admin>KuberaPortal
-      </a>
+        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal "
+          href={{window.location.hostname}}/enterprise-server@2.22/admin>KuberaPortal
+        </a>
       </div>
-            <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
-        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href={{window.location.hostname}}/free-pro-team@latest/desktop>KuberaChoas
-      </a>
+      <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
+        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal "
+          href={{window.location.hostname}}/free-pro-team@latest/desktop>KuberaChoas
+        </a>
       </div>
+    </div> -->
+<div>
+  <div class="row d-flex flex-justify-around" >
+    <div class="col-md-6 col-lg-6">
+      <p class="font-weight-300">Getting started</p>
+      <ul class="getting-started-articles-list list-style-none my-5">
+        {% for i in (1..4) %}
+        <li>
+          <h3>Setup Kubera</h3>
+          <h5 class="font-weight-300">Search documentation, support topics of Kubera</h5>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-    
-  </section>
-
-  <div class="px-3 px-md-6 container-xl">
-  {% include featured-links %}
+    <div class="col-md-6 col-lg-6">
+      <p class="font-weight-300">Popular articles</p>
+      <ul class="getting-started-articles-list list-style-none my-5">
+        {% for i in (1..4) %}
+        <li>
+          <h3>Setup Kubera</h3>
+          <h5 class="font-weight-300">Search documentation, support topics of Kubera</h5>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
+</div>
+</section>
+
