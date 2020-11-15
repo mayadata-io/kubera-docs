@@ -7,9 +7,104 @@ versions:
   free-pro-team: '*'
 ---
 
-For the complete documentation for {% data variables.product.prodname_enterprise_api %}, see [{% data variables.product.prodname_enterprise_api %} REST API reference docs](/enterprise/{{ currentVersion }}/v3/). With the API, you can automate many administrative tasks. Some examples include:
+Adding new Kubernetes clusters to Propel
+To add your Kubernetes cluster to the Kubera Propel:
 
-- Perform changes to the {% data variables.enterprise.management_console %}. For more information, see "[{% data variables.enterprise.management_console %}](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#management-console)."
-- Collect statistics about your instance. For more information, see "[Admin stats](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#admin-stats)."
-- Configure LDAP sync. For more information, see "[LDAP](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#ldap)."
-- Manage your enterprise account. For more information, see "[Enterprise accounts](/v4/guides/managing-enterprise-accounts)."
+* Click on the "Clusters tab". Here you can either select an existing cluster or you can add a new    cluster. 
+* Click on "Add new cluster" to get a new cluster added to the existing list of clusters if any.
+<br><br>
+<a href="/assets/images/propel2.png"><img class="image-with-border" src="/assets/images/propel2.png"></a>
+<br><br>
+<br><br>
+<a href="/assets/images/propel3.png"><img class="image-with-border" src="/assets/images/propel3.png"></a>
+<br><br>
+<br><br>
+* Copy and execute the lines of code visible in the Pop-Up screen on your command prompt to connect your cluster with Propel. After successfully executing the command in the kubernetes cluster command prompt, click on the tab which says: “Connect the cluster”.
+
+* Once it is done, the newly added cluster will be visible in the “clusters” tab.
+
+<a href="/assets/images/propel4.png"><img class="image-with-border" src="/assets/images/propel4.png"></a>
+
+
+
+* Once the cluster is added, you need to set the “Storage Workflow” as the next step. 
+
+* To set it up, select your newly added cluster and click on - Manage Clusters. 
+
+<a href="/assets/images/propel5.png"><img class="image-with-border" src="/assets/images/propel5.png"></a>
+<br><br>
+
+
+* Kubera Propel gives the option to segregate storage and application nodes.
+
+* Select the Nodes button which will help you in configuring your Storage Nodes and Application nodes.
+
+* You can select the nodes which you want based on the performance and the hardware specifications of that node.
+
+* Nodes can be labelled as well in the kubernetes cluster and the same can be used in the Kubera Propel UI as the selection criteria. Suppose if you want to select a particular  labelled node or group of nodes, the same can be selected from propel UI.
+
+* Once the correct storage nodes have been selected as per requirement, click on "Next".
+<br><br>
+<a href="/assets/images/propel6.png"><img class="image-with-border" src="/assets/images/propel6.png"></a>
+<br><br>
+
+* After the selection of storage nodes, you can configure similarly the application nodes.
+
+* Select the nodes with iscsi client installed. 
+
+* You can also get the iscsi client installed from the Propel UI if required or you want to select a new application node which doesn’t have the iscsi client already installed.
+
+* Click on "Select All", if you consider using all the nodes as Storage Nodes.
+
+<br><br>
+<a href="/assets/images/propel7.png"><img class="image-with-border" src="/assets/images/propel7.png"></a>
+<br><br>
+
+<br><br>
+<a href="/assets/images/propel8.png"><img class="image-with-border" src="/assets/images/propel8.png"></a>
+<br><br>
+
+
+* Verify and apply if all the storage Nodes and application nodes have been selected. Similarly, we have to configure Pools, Storage Class.
+<br><br>
+
+<a href="/assets/images/propel9.png"><img class="image-with-border" src="/assets/images/propel9.png"></a>
+<br><br>
+
+* Create storage pools and select the Storage nodes to form the Pools.
+
+* Either you click on “Select All” to form the storage pool with every storage node or you can select the storage node as per choice.
+
+* Disk information can be obtained by selecting the individual disk attached to Storage Node.
+
+* Selecting  the storage node will give details like “Disk Name” “Size” “Disk type” etc.
+
+* You also get the flexibility  to select the disks connected with storage nodes as per requirement depending on the disk type and file type supported.
+
+
+<a href="/assets/images/propel10.png"><img class="image-with-border" src="/assets/images/propel10.png"></a>
+
+
+* Create Storage Classes by clicking on “Add Storage Class”
+
+<a href="/assets/images/propel11.png"><img class="image-with-border" src="/assets/images/propel11.png"></a>
+
+* While creating the storage class, you can select the number of replicas required from the drop down menu.
+
+* Protocol can be selected as well from the same tab in the drop down menu. Iscsi was the required protocol so you can select that.
+
+* Specific filesystem can be selected as well from the drop down menu like “xfs”
+
+* Click on the “Create Storage Classes” button after selecting all the options in the storage class screen.
+
+* If everything is correct, the required storage class will be seen in the creation stage which will be visible on the screen.
+
+<a href="/assets/images/propel13.png"><img class="image-with-border" src="/assets/images/propel13.png"></a>
+
+* You can skip the “Storage test” - ‘Create a Test’ button if you do not wish to perform the storage test.
+
+* Finally the next screen below would give you the details of total number of Storage Nodes , Storage Classes , total number of volumes etc.
+
+<br><br>
+<a href="/assets/images/propelnew.png"><img class="image-with-border" src="/assets/images/propelnew.png"></a>
+<br><br>

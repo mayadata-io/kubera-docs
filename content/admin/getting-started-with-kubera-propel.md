@@ -7,9 +7,33 @@ versions:
   free-pro-team: '*'
 ---
 
-For the complete documentation for {% data variables.product.prodname_enterprise_api %}, see [{% data variables.product.prodname_enterprise_api %} REST API reference docs](/enterprise/{{ currentVersion }}/v3/). With the API, you can automate many administrative tasks. Some examples include:
+<i>
+<b>
+NOTE:</b> Kubera Propel is an offering from MayaData to it’s enterprise grade customers. We offer a 15 day free trial license to all our customers.  
+To know more about subscription and licensing <a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/desktop">click here</a>.
+</i>
 
-- Perform changes to the {% data variables.enterprise.management_console %}. For more information, see "[{% data variables.enterprise.management_console %}](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#management-console)."
-- Collect statistics about your instance. For more information, see "[Admin stats](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#admin-stats)."
-- Configure LDAP sync. For more information, see "[LDAP](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#ldap)."
-- Manage your enterprise account. For more information, see "[Enterprise accounts](/v4/guides/managing-enterprise-accounts)."
+
+<br><br>
+To get started with Kubera Propel, login to Kubera and click on “Start Kubera Propel"
+<br><br>
+
+<a href="/assets/images/propel_main.png"><img class="image-with-border" src="/assets/images/propel_main.png"></a>
+<br><br> 
+
+Next, enter the project name and click on “Create a project”. 
+<br><br>
+
+On successful creation of the project you will be redirected back to Kubera, where Kubera Propel will be in the configured state. To access Kubera Propel portal click on  the "Kubera Propel" card.
+<br><br>
+
+
+<a href="/assets/images/propel_license.png"><img class="image-with-border" src="/assets/images/propel_license.png"></a>
+<br><br>
+
+You will now be redirected to Kubera Propel home screen.
+<br><br>
+
+
+<a href="/assets/images/propel1.png"><img class="image-with-border" src="/assets/images/propel1.png"></a>
+<br><br>
