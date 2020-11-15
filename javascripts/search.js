@@ -249,6 +249,7 @@ function toggleSearchDisplay (isReset) {
 
 function openSearch () {
   document.querySelector('#search-input-container input').classList.add('js-open')
+  document.querySelector('#search-input-container input').classList.add('p-0')
   document.querySelector('#search-results-container').classList.add('js-open')
   document.querySelector('.search-overlay-desktop').classList.add('js-open')
 }
