@@ -16,7 +16,6 @@ versions:
     {% link_in_list /litmus-chaos-vs-kubera-chaos %}
     {% link_in_list /getting-started-with-kubera-chaos %}
     {% link_in_list /private-chaos-hub %}
-    {% link_in_list /creating-new-experiments %}
     {% link_in_list /creating-new-chaos-workflows %}
     {% link_in_list /adding-new-clusters %}
     {% link_in_list /chaos-analytics %}

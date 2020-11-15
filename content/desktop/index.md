@@ -12,21 +12,13 @@ versions:
 ### Table of Contents
 
 {% topic_link_in_list /overview %}
-    {% link_in_list /getting-started-with-Kuberaenterprise %}
-    {% link_in_list /creating-your-first-repository-using-github-desktop %}
-    {% link_in_list /supported-operating-systems %}
-    {% link_in_list /keyboard-shortcuts %}
-    {% link_in_list /launching-github-desktop-from-the-command-line %}
-{% topic_link_in_list /installing-and-authenticating-to-github-desktop %}
-    {% link_in_list /setting-up-github-desktop %}
-    {% link_in_list /installing-github-desktop %}
-    {% link_in_list /authenticating-to-github %}
-    {% link_in_list /about-connections-to-github %}
-    {% link_in_list /updating-github-desktop %}
-    {% link_in_list /uninstalling-github-desktop %}
-{% topic_link_in_list /configuring-and-customizing-github-desktop %}  
-    {% link_in_list /configuring-git-for-github-desktop %}
-    {% link_in_list /configuring-basic-settings %}
-    {% link_in_list /configuring-a-default-editor %}
-    {% link_in_list /setting-a-theme-for-github-desktop %}
-    {% link_in_list /about-git-large-file-storage-and-github-desktop %}
+    {% link_in_list /Getting-Started%}
+    {% link_in_list /Architecture %}
+    {% link_in_list /Authentication %}
+    {% link_in_list /User-management %}
+    {% link_in_list /Team-management%}
+    {% link_in_list /Upgrading%}
+    {% link_in_list /Uninstalling%}
+    {% link_in_list /Air-Gapped-environments%}
+    {% link_in_list /Troubleshooting%}
+{% topic_link_in_list /customer %}

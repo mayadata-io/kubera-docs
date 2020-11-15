@@ -1,6 +1,6 @@
 ---
 title: Overview
-intro: Getting started kubera Enterprise.
+intro: ''
 mapTopic: true
 redirect_from:
   - /developers/overview
