@@ -7,9 +7,5 @@ versions:
   free-pro-team: '*'
 ---
 
-For the complete documentation for {% data variables.product.prodname_enterprise_api %}, see [{% data variables.product.prodname_enterprise_api %} REST API reference docs](/enterprise/{{ currentVersion }}/v3/). With the API, you can automate many administrative tasks. Some examples include:
+Kubera Propel is a component of  [OpenEBS](https://openebs.io/) and is actively developed and maintained by [MayaData](https://mayadata.io/), as part of the Kubera platform for data agility. Kubera Propel is based upon the CNCF project OpenEBS. OpenEBS Mayastor is open source Container Attached Storage - a pattern that includes the use of Kubernetes itself as a control plane for storage in order to deliver per workload storage. Teams and workloads that have different needs can use OpenEBS in different ways - and can remain loosely coupled; this is extremely different from traditional shared everything storage.  Kubera Propel is perhaps best known due to multiple benchmarks in the Fall of 2020  indicating that it is extremely performant, highly available with low overhead abstraction and appears to be the lowest latency widely deployed storage software available for Kubernetes.  
 
-- Perform changes to the {% data variables.enterprise.management_console %}. For more information, see "[{% data variables.enterprise.management_console %}](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#management-console)."
-- Collect statistics about your instance. For more information, see "[Admin stats](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#admin-stats)."
-- Configure LDAP sync. For more information, see "[LDAP](/enterprise/{{ currentVersion }}/user/rest/reference/enterprise-admin#ldap)."
-- Manage your enterprise account. For more information, see "[Enterprise accounts](/v4/guides/managing-enterprise-accounts)."
