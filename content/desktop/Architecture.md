@@ -1,8 +1,8 @@
 ---
-title: About connections to GitHub
+title: Architecture
 intro: '{% data variables.product.prodname_desktop %} uses HTTPS to securely exchange data with {% data variables.product.prodname_dotcom %}.'
 redirect_from:
-  - /desktop/getting-started-with-github-desktop/about-connections-to-github
+  - /desktop/Architecture
 versions:
   free-pro-team: '*'
 ---

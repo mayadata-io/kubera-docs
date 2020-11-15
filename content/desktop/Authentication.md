@@ -3,8 +3,7 @@ title: Authenticating to GitHub
 shortTitle: Authentication
 intro: 'You can securely access your account''s resources on {% data variables.product.prodname_desktop %} by authenticating to {% data variables.product.prodname_dotcom %}.'
 redirect_from:
-  - /desktop/getting-started-with-github-desktop/authenticating-to-github-using-the-browser
-  - /desktop/getting-started-with-github-desktop/authenticating-to-github
+  - /desktop/Authentication
 versions:
   free-pro-team: '*'
 ---
