@@ -1,9 +1,9 @@
 ---
 title: About Git Large File Storage and GitHub Desktop
-shortTitle: About Git LFS
+shortTitle: Troubleshooting
 intro: '{% data variables.product.prodname_desktop %} includes {% data variables.large_files.product_name_long %} for managing large files.'
 redirect_from:
-  - /desktop/getting-started-with-github-desktop/about-git-large-file-storage-and-github-desktop
+  - /desktop/Troubleshooting
 versions:
   free-pro-team: '*'
 ---

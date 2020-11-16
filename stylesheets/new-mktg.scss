@@ -59,8 +59,8 @@
 
 // Typography
 
-$marketing-font-path: "/assets/fonts/alliance/";
-$font-family-mktg: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$marketing-font-path: "/assets/fonts/roboto-slab/";
+$font-family-mktg: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-weight-extrabold: 800 !default;
 
 .font-mktg {
@@ -68,34 +68,113 @@ $font-weight-extrabold: 800 !default;
 }
 
 // Type
+// @font-face {
+//   font-family: "Alliance No.1";
+//   font-style: normal;
+//   font-weight: $font-weight-normal;
+//   src: local("Alliance No.1 Regular"), local("alliance-no-1-regular"), url("#{$marketing-font-path}alliance-no-1-regular.woff") format("woff");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Alliance No.1";
+//   font-style: normal;
+//   font-weight: $font-weight-semibold;
+//   src: local("Alliance No.1 Medium"), local("alliance-no-1-medium"), url("#{$marketing-font-path}alliance-no-1-medium.woff") format("woff");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Alliance No.1";
+//   font-style: normal;
+//   font-weight: $font-weight-bold;
+//   src: local("Alliance No.1 Bold"), local("alliance-no-1-bold"), url("#{$marketing-font-path}alliance-no-1-bold.woff") format("woff");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Alliance No.1";
+//   font-style: normal;
+//   font-weight: $font-weight-extrabold;
+//   src: local("Alliance No.1 ExtraBold"), local("alliance-no-1-extrabold"), url("#{$marketing-font-path}alliance-no-1-extrabold.woff") format("woff");
+//   font-display: swap;
+// }
+
+
+
+//  ROBOTOTOTOTOTTOTOTOT----------
+
+
 @font-face {
-  font-family: "Alliance No.1";
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: $font-weight-normal;
-  src: local("Alliance No.1 Regular"), local("alliance-no-1-regular"), url("#{$marketing-font-path}alliance-no-1-regular.woff") format("woff");
+  src: local("Roboto Slab Regular"), local("roboto-slab-regular"), url("#{$marketing-font-path}roboto-slab-regular.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Alliance No.1";
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: $font-weight-semibold;
-  src: local("Alliance No.1 Medium"), local("alliance-no-1-medium"), url("#{$marketing-font-path}alliance-no-1-medium.woff") format("woff");
+  src: local("Roboto Slab Medium"), local("roboto-slab-500"), url("#{$marketing-font-path}roboto-slab-500.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Alliance No.1";
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: $font-weight-bold;
-  src: local("Alliance No.1 Bold"), local("alliance-no-1-bold"), url("#{$marketing-font-path}alliance-no-1-bold.woff") format("woff");
+  src: local("Roboto Slab Bold"), local("roboto-slab-700"), url("#{$marketing-font-path}roboto-slab-700.woff") format("woff");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Alliance No.1";
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: $font-weight-extrabold;
-  src: local("Alliance No.1 ExtraBold"), local("alliance-no-1-extrabold"), url("#{$marketing-font-path}alliance-no-1-extrabold.woff") format("woff");
+  src: local("Roboto Slab ExtraBold"), local("roboto-slab-800"), url("#{$marketing-font-path}roboto-slab-800.woff") format("woff");
   font-display: swap;
 }
+
+
+$mulish-font-path: "/assets/fonts/mulish/";
+$mulish-font-family-mktg: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-weight-extrabold: 800 !default;
+
+.font-mulish {
+  font-family: $mulish-font-family-mktg;
+}
+
+// Type
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  src: local("Mulish Regular"), local("mulish-v1-latin-regular"), url("#{$mulish-font-path}mulish-v1-latin-regular.woff") format("woff");
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: "Alliance No.1";
+//   font-style: normal;
+//   font-weight: $font-weight-semibold;
+//   src: local("Alliance No.1 Medium"), local("alliance-no-1-medium"), url("#{$marketing-font-path}alliance-no-1-medium.woff") format("woff");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Alliance No.1";
+//   font-style: normal;
+//   font-weight: $font-weight-bold;
+//   src: local("Alliance No.1 Bold"), local("alliance-no-1-bold"), url("#{$marketing-font-path}alliance-no-1-bold.woff") format("woff");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Alliance No.1";
+//   font-style: normal;
+//   font-weight: $font-weight-extrabold;
+//   src: local("Alliance No.1 ExtraBold"), local("alliance-no-1-extrabold"), url("#{$marketing-font-path}alliance-no-1-extrabold.woff") format("woff");
+//   font-display: swap;
+// }

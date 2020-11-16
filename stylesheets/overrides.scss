@@ -2,6 +2,8 @@
 ------------------------------------------------------------------------------*/
 
 .markdown-body {
+  font-family: Mulish;
+  background: #191428;
   h1,
   h2,
   h3,
@@ -44,7 +46,7 @@
 
 // needs specificity to override
 .markdown-body .lead-mktg p {
-  color: $gray-900;
+  color: #ffff;
 }
 
 .extended-markdown p {

@@ -1,9 +1,9 @@
 ---
 title: Creating your first repository using GitHub Desktop
-shortTitle: Creating your first repository
+shortTitle: ArchitectureAir-Gapped environments
 intro: 'You can use {% data variables.product.prodname_desktop %} to create and manage a Git repository without using the command line.'
 redirect_from:
-  - /desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop
+  - /desktop/Air-Gapped-environments
 versions:
   free-pro-team: '*'
 ---
