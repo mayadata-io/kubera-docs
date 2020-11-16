@@ -1,3 +1,10 @@
+.body-style{
+    background-color: #191428;
+    background-image: url(/assets/images/landing.svg);
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: top;
+}
 .font-weight-300 {
     font-weight: 300;
 }
@@ -29,7 +36,7 @@
     // @extend .btn ;
     flex: 1 0 30%;
     margin: 10px;
-    padding: 30px 20px;
+    padding: 25px 25px;
     text-align: left;
     font-size: 20px;
     font-family: Roboto Slab;
@@ -37,17 +44,10 @@
     color: #ffff;
     font-size: 20px;
     line-height: 26px;
-    // @extend .flex-wrap;
-    // @extend .flex-justify-around;
-    // background: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
-    // backdrop-filter: blur(10px);
-    /* Note: backdrop-filter has minimal browser support */
-    //
     border-radius: 10px;
     background-color: transparent;
     border: 1px solid #473389;
-    // border: 2.03px solid;
-    // border-image-source: linear-gradient(82.94deg, rgba(102, 61, 219, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+    max-width: 340px;
 }
 .explore-product-btn:hover {
     background: linear-gradient(82.94deg, rgba(51, 47, 61, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
@@ -55,8 +55,8 @@
     border-radius: 10px;
     // color: #ffff;
     // background: transparent;
-    border: 2.03px solid;
-    border-image: linear-gradient(82.94deg, rgba(102, 61, 219, 0.72) 17.14%, rgba(169, 61, 219, 0.97) 79.8%) 1;
+    border: 1px solid #473389
+    // border-image: linear-gradient(82.94deg, rgba(102, 61, 219, 0.72) 17.14%, rgba(169, 61, 219, 0.97) 79.8%) 1;
 }
 .getting-started-articles-list {
     li{
@@ -73,3 +73,25 @@
     }
 }
 
+.header-font-weight{
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.header-bar{
+    position: sticky;
+    top: 0;
+    background-color: #191528;
+}
+.header-bar-bottom-borer{
+    border-bottom: solid 1px;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.initial-button{
+    background: linear-gradient(82.94deg, rgba(51, 47, 61, 0.144) 17.14%, rgba(169, 61, 219, 0.194) 79.8%);
+    border-radius: 10px;
+    border: 1.5px solid #473389
+}
+.footer-section{
+    background: rgba(0, 0, 0, 0.2);
+}
