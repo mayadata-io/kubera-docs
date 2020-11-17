@@ -1,5 +1,5 @@
 ---
-title: Configuring basic settings
+title: Upgrading 
 intro: 'You can access settings for protecting your privacy, connecting accounts to GitHub Desktop, and configuring Git.'
 redirect_from:
   - /desktop/getting-started-with-github-desktop/configuring-basic-settings

@@ -1,6 +1,6 @@
 ---
 title: Overview
-intro: Getting started kubera Enterprise.
+intro: Getting started with Kubera Propel.
 mapTopic: true
 redirect_from:
   - /admin/overview

@@ -1,77 +1,39 @@
 ---
-title: Configuring a default editor
-intro: You can configure GitHub Desktop to open files in your project with your preferred text editor or integrated development environment (IDE).
+title: User Management 
 redirect_from:
-  - /desktop/getting-started-with-github-desktop/configuring-a-default-editor
+  - /desktop/User-management
 versions:
   free-pro-team: '*'
 ---
-### Supported editors
+<br><br>
+User management plays a vital role in Kubera by controlling the resources being accessed by a user to perform his/her role and the actions they perform. The purpose of this component is to be able to manage the users having access to the Kubera dashboard.
+<br><br>
+You can perform User management by clicking on the “Settings” tab from the Kubera dashboard. Once you are inside the “User Management” screen,you can “Create users, manage them and reset their password and username” when required. Select the user for which you need to make changes, click on the “Edit Profile” tab 
+<br><br>
 
-{% data variables.product.prodname_desktop %} supports the following editors.
+<a href="/assets/images/usermanage1.png"><img class="image-with-border" src="/assets/images/usermanage1.png"></a>
 
-{% mac %}
+<br><br>
+You can Edit changes as per your choice and save it. Forgotten passwords by users can be changed as well from the same user management screen.
+<br><br>
 
-- [Atom](https://atom.io/)
-- [MacVim](https://macvim-dev.github.io/macvim/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Visual Studio Codium](https://vscodium.com/)
-- [Sublime Text](https://www.sublimetext.com/)
-- [BBEdit](http://www.barebones.com/products/bbedit/)
-- [JetBrains WebStorm](https://www.jetbrains.com/webstorm/)
-- [JetBrains PhpStorm](https://www.jetbrains.com/phpstorm/)
-- [JetBrains Rider](https://www.jetbrains.com/rider/)
-- [JetBrains PyCharm](https://www.jetbrains.com/pycharm/)
-- [JetBrains RubyMine](https://www.jetbrains.com/rubymine/)
-- [JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/)
-- [JetBrains GoLand](https://www.jetbrains.com/go/)
-- [TextMate](https://macromates.com/)
-- [Brackets](http://brackets.io/)
-  - To use Brackets with {% data variables.product.prodname_desktop %}, you must install the Command Line shortcut. To install the shortcut, open Brackets, click **File** in the menu bar, then click **Install Command Line Shortcut**.
-- [Typora](https://typora.io/)
-- [CodeRunner](https://coderunnerapp.com/)
-- [SlickEdit](https://www.slickedit.com/)
-- [Xcode](https://developer.apple.com/xcode/)
-- [Android Studio](https://developer.android.com/studio)
+<a href="/assets/images/usermanage2.png"><img class="image-with-border" src="/assets/images/usermanage2.png"></a>
+<br><br>
 
-{% endmac %}
+<a href="/assets/images/usermanage3.png"><img class="image-with-border" src="/assets/images/usermanage3.png"></a>
+<br><br>
 
-{% windows %}
+User deletion can also be performed from the user management screen. Select the user for which the deletion needs to be performed, and click on delete and later click on “Yes”. 
+<br><br>
 
-- [Atom](https://atom.io/)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Visual Studio Codium](https://vscodium.com/)
-- [Sublime Text](https://www.sublimetext.com/)
-- [ColdFusion Builder](https://www.adobe.com/products/coldfusion-builder.html)
-- [Typora](https://typora.io/)
-- [SlickEdit](https://www.slickedit.com/)
-- [JetBrains WebStorm](https://www.jetbrains.com/webstorm/)
-- [JetBrains PhpStorm](https://www.jetbrains.com/phpstorm/)
-- [JetBrains Rider](https://www.jetbrains.com/rider/)
-- [Notepad++](https://notepad-plus-plus.org/)
+<a href="/assets/images/usermanage4.png"><img class="image-with-border" src="/assets/images/usermanage4.png"></a>
+<br><br>
 
-{% endwindows %}
 
-### Configuring a default editor
+Furthermore, other additional settings like authentication settings changes like “Local username/password” or “GitHub OAuth” can be controlledfrom the “Authentication” tab inside settings of Kubera dashboard.
+<br><br>
 
-{% mac %}
+<a href="/assets/images/usermanage5.png"><img class="image-with-border" src="/assets/images/usermanage5.png"></a>
+<br><br>
 
-{% data reusables.desktop.mac-select-desktop-menu %}
-3. In the Preferences window, select **Integrations**.
-  ![The Integrations pane in the Preferences window](/assets/images/help/desktop/mac-select-integrations-pane.png)
-4. Use the "External Editor" drop-down menu, and choose the editor you want to set as your default.
-  ![The External editor menu in the Preferences menu bar](/assets/images/help/desktop/mac-editor-menu.png)
-5. Click **Save**.  
 
-{% endmac %}
-
-{% windows %}
-
-{% data reusables.desktop.windows-choose-options %}
-3. In the Options window, select **Integrations**.
-  ![The Integrations pane in the Options window](/assets/images/help/desktop/windows-select-integrations-pane.png)
-4. Use the "External Editor" drop-down menu, and choose the editor you want to set as your default.
-  ![The External editor menu in the Options menu bar](/assets/images/help/desktop/windows-editor-menu.png)
-5. Click **Save**.  
-
-{% endwindows %}
