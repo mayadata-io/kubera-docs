@@ -1,20 +1,24 @@
 <!doctype html>
 <html lang="{{currentLanguage}}">
-  {% include head %}
-
-  <body class="d-lg-flex body-style" >
+{% include head %}
+<!-- <body class="d-lg-flex"  [ngClass]="{'body-style': page.relativePath == 'index.md'}"> -->
+{% if page.relativePath == 'index.md' %}
+<body class="d-lg-flex body-style">
+  {% else %}
+  <body class="d-lg-flex not-relative-path">
+    {% endif %}
     {% include sidebar %}
-
     <main class="width-full text-white">
       {% include header %}
       {% include deprecation-banner %}
       {% if page.relativePath == 'index.md' %}
-        {% include landing %}
+      {% include landing %}
       {% else %}
-        {% include article %}
+      {% include article %}
       {% endif %}
       {% include support %}
       {% include footer %}
     </main>
   </body>
+
 </html>
