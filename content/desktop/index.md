@@ -9,9 +9,9 @@ versions:
 ---
 
 
-### Table of Contents
 
-{% topic_link_in_list /overview %}
+{% topic_link_in_list /Table-of-Contents %}
+    {% link_in_list /overview%}
     {% link_in_list /Getting-Started%}
     {% link_in_list /Architecture %}
     {% link_in_list /Authentication %}
