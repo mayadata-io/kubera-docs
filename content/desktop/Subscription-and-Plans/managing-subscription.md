@@ -1,8 +1,8 @@
 ---
-title: Managing Subscriptions
-intro: '{% data variables.product.prodname_ghe_server %} supports the same powerful API available on {% data variables.product.prodname_dotcom_the_website %} as well as its own set of API endpoints.'
+title: Managing Subscription 
+#intro: Getting started kubera Enterprise.
 redirect_from:
-  - /kuberaportal/managing-subcriptions
+  - /desktop/Subscription-and-Plans/managing-subscription
 versions:
   free-pro-team: '*'
 ---
@@ -20,5 +20,3 @@ Also, users can manage all their invoices from the subscriptions page. Users can
 <a href="/assets/images/Portal10.JPG"><img class="image-with-border" src="/assets/images/Portal10.JPG"></a>
 
 <a href="/assets/images/Portal12.JPG"><img class="image-with-border" src="/assets/images/Portal12.JPG"></a>
-
-

@@ -1,6 +1,6 @@
 ---
 title: Table of Contents
-intro: Getting started kubera Enterprise.
+intro: Getting started with kubera Enterprise.
 mapTopic: true
 redirect_from:
   - /desktop/Table-of-Contents

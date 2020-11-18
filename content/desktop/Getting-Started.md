@@ -1,6 +1,6 @@
 ---
 title: Getting started with KuberaEnterprise 
-intro: Setup KuberaEnterprise on kubernetes
+#intro: Setup KuberaEnterprise on kubernetes
 miniTocMaxHeadingLevel: 4
 versions:
   free-pro-team: '*'
