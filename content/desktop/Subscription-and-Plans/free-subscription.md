@@ -1,12 +1,11 @@
 ---
-title: Free Subscription
-intro: '{% data variables.product.prodname_ghe_server %} supports the same powerful API available on {% data variables.product.prodname_dotcom_the_website %} as well as its own set of API endpoints.'
+title: Free Subscription 
+#intro: Getting started kubera Enterprise.
 redirect_from:
-  - /kuberaportal/free-subcription
+  - /desktop/Subscription-and-Plans/free-subscription
 versions:
   free-pro-team: '*'
 ---
-
 
 Free Subscription
 Kubera portal offers a free subscription to its users. Users can start with a free subscription to begin with Kubera.

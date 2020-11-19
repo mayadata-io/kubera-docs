@@ -1,12 +1,11 @@
 ---
 title: Teams Subscription
-intro: '{% data variables.product.prodname_ghe_server %} supports the same powerful API available on {% data variables.product.prodname_dotcom_the_website %} as well as its own set of API endpoints.'
+#intro: Getting started kubera Enterprise.
 redirect_from:
-  - /kuberaportal/team-subcription
+  - /desktop/Subscription-and-Plans/teams-subscription
 versions:
   free-pro-team: '*'
 ---
-
 
 Teams Subscription
 If users have a cluster with more than 3 storage nodes, or they crossed 5TB overall across the two clusters they are allowed in the free  plan or they need a 11th volume or they need a third cluster. 
@@ -47,4 +46,3 @@ Kubera Chaos
 - Additional Auth modes
 - Unlimited volumes
 - 8-8 M-F support
-
