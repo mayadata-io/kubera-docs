@@ -13,6 +13,7 @@ versions:
 {% topic_link_in_list /Table-of-Contents %}
     {% link_in_list /overview%}
     {% link_in_list /Architecture%}
+    {% link_in_list /quickstart%}
     {% link_in_list /Getting-Started %}
     {% link_in_list /Authentication %}
     {% link_in_list /User-management %}
