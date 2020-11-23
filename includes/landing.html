@@ -1,5 +1,5 @@
 <!-- Hero -->
-<section id="landing">
+<section id="landing" class="landing-hero">
   <div class="container-xl  d-flex px-4 pb-6 pb-lg-9">
     <div class="gutter gutter-xl-spacious pt-6 pt-lg-0 d-lg-flex flex-row-reverse flex-items-left">
       <div class="col-lg-12 col-12 mt-6">
@@ -15,37 +15,18 @@
 </section>
 
 <!-- Explore by Area -->
-<section class="container-xl pb-lg-4 my-8 px-3 px-md-6">
-  <!--
-    <div class="">
-      <h3 class="text-mono f5 text-normal text-gray text-md-center mb-4">{% data ui.homepage.explore_by_product %}</h3>
-      <div class="d-flex flex-wrap gutter gutter-xl-spacious">
-      {% for product in activeProducts %}
-      {% if product.versions contains currentVersion or currentVersion == 'homepage' %}
-      <div class="d-flex flex-column col-12 col-sm-6 col-lg-3 pb-4">
-        <a class="btn-mktg flex-auto d-flex flex-items-center btn-outline-mktg btn-large-mktg ws-normal " href="{% unless product.external %}/{{ currentLanguage }}{% endunless %}{% if product.versions contains currentVersion %}/{{currentVersion}}/{{product.id}}{% else %}{{product.href}}{% endif %}">{{ product.name }}
-      </a>
-      </div>
-      {% endif %}
-      {% endfor %}
-      </div>
-    </div>
-    -->
-  <h3 class="text-mono f5 text-normal text-white text-md-left mb-4">Explore by Area</h3>
-
+<section class="container-xl pb-lg-4 my-8 px-3 px-md-6 explore-article">
+  <h3 class="text-mono f5 text-normal text-md-left mb-4">Explore by Area</h3>
   <div class="width-full">
     <div>
       <div class="d-flex flex-wrap">
         <button class="explore-product-btn" onclick="location.href = '{{window.location.hostname}}/free-pro-team@latest/desktop';">Kubera</button>
         <button class="explore-product-btn" onclick="location.href = 'https://vendor.mayadata.io';">GettingSupport</button>
         <button class="explore-product-btn" onclick="location.href = 'https://slack.mayadata.io';">KuberaCommunity</button>
-        <!-- <button class="explore-product-btn">Title-4</button>
-        <button class="explore-product-btn">Title-5</button>
-        <button class="explore-product-btn">Title-6</button> -->
       </div>
     </div>
   </div>
-  <h3 class="text-mono f5 text-normal text-white text-md-left mb-4 mt-4">Explore by Module</h3>
+  <h3 class="text-mono f5 text-normal text-md-left mb-4 mt-4">Explore by Module</h3>
 
   <div class="width-full">
     <div>
