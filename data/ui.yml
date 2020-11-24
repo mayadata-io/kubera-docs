@@ -131,3 +131,17 @@ footer:
       careers: Careers
       press: Press
       shop: Shop
+  external_links:
+    product: https://mayadata.io/product
+    open_source: https://mayadata.io/open-source
+    workloads: https://mayadata.io/resources
+    company: https://mayadata.io/aboutus
+    resources: https://mayadata.io/resources
+    blog: https://blog.mayadata.io/
+    pricing: https://mayadata.io/pricing
+  social_networks:
+    facebook: https://www.facebook.com/MayaDataOfficial/
+    twitter: https://twitter.com/mayadata
+    linkedin: https://www.linkedin.com/company/mayadata/
+    github: https://github.com/mayadata-io
+    youtube: https://www.youtube.com/channel/UCm2gbdJagH7pMrlCHR8FxvA
