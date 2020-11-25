@@ -13,15 +13,15 @@ For this guide, you need to  make use of the latest release of Helm v3 (v3.0.2 o
 In order to install Kubera, you must add the repository to your helm’s configuration:
 <br><br>
 ### Installing Kubera
-<b>helm repo add kubera https://charts.mayadata.io/</b>
+<pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
 <br><br>
 Below command can be used to install Kubera with default values 
  
-<b>helm install kubera kubera/kubera-enterprise</b>   
+<pre>helm install kubera kubera/kubera-enterprise</pre>   
 <br><br>
 To install kubera with custom configuration you can find the values.yaml <some link> file and update it accordingly and then below command can be used to install Kubera 
 
-<b>helm install kubera kubera/kubera-enterprise  -f path_to_values.yaml</b> 
+<pre>helm install kubera kubera/kubera-enterprise  -f <font style="color:red">&lt;path_to_values.yaml&gt;</font></pre> 
 <br><br>
 *Note: This step can take several minutes in order for all resources to be allocated, services to start, and access made available.*
 <br><br>
