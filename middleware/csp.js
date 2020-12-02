@@ -9,7 +9,8 @@ module.exports = contentSecurityPolicy({
     connectSrc: [
       "'self'",
       '*.algolia.net',
-      '*.algolianet.com'
+      '*.algolianet.com',
+      '*.googletagmanager.com'
     ],
     fontSrc: [
       "'self'",
@@ -21,6 +22,7 @@ module.exports = contentSecurityPolicy({
       'github.githubassets.com',
       'github-images.s3.amazonaws.com',
       'octodex.github.com',
+      'www.googletagmanager.com',
       'placehold.it'
     ],
     objectSrc: [
@@ -29,11 +31,13 @@ module.exports = contentSecurityPolicy({
     scriptSrc: [
       "'self'",
       'data:',
+      "www.googletagmanager.com",
+      "static.ads-twitter.com",
       "'unsafe-eval'", // exception for Algolia instantsearch
       "'unsafe-inline'"
     ],
     frameSrc: [ // exceptions for GraphQL Explorer
-      'https://graphql-explorer.githubapp.com', // production env
+      'https://www.googletagmanager.com', // production env
       'http://localhost:3000' // development env
     ],
     styleSrc: [
