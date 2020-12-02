@@ -10,7 +10,7 @@ module.exports = contentSecurityPolicy({
       "'self'",
       '*.algolia.net',
       '*.algolianet.com',
-      '*.googletagmanager.com'
+      '*.googletagmanager.com/*'
     ],
     fontSrc: [
       "'self'",
