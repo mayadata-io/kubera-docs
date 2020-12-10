@@ -34,7 +34,7 @@ module.exports = contentSecurityPolicy({
       'data:',
       "www.googletagmanager.com",
       "static.ads-twitter.com",
-      "sc.lfeeder.com/*"
+      "sc.lfeeder.com/*",
       "'unsafe-eval'", // exception for Algolia instantsearch
       "'unsafe-inline'"
     ],
