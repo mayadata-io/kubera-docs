@@ -10,7 +10,8 @@ module.exports = contentSecurityPolicy({
       "'self'",
       '*.algolia.net',
       '*.algolianet.com',
-      '*.google-analytics.com/*'
+      '*.google-analytics.com/*',
+      'www.google-analytics.com/'
     ],
     fontSrc: [
       "'self'",
@@ -33,6 +34,7 @@ module.exports = contentSecurityPolicy({
       'data:',
       "www.googletagmanager.com",
       "static.ads-twitter.com",
+      "sc.lfeeder.com/*"
       "'unsafe-eval'", // exception for Algolia instantsearch
       "'unsafe-inline'"
     ],
