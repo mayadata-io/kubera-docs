@@ -11,6 +11,7 @@ module.exports = contentSecurityPolicy({
       '*.algolia.net',
       '*.algolianet.com',
       '*.google-analytics.com/*',
+      'sc.lfeeder.com/*',
       'www.google-analytics.com/'
     ],
     fontSrc: [
@@ -24,6 +25,7 @@ module.exports = contentSecurityPolicy({
       'github-images.s3.amazonaws.com',
       'octodex.github.com',
       'www.googletagmanager.com',
+      'tr.lfeeder.com',
       'placehold.it'
     ],
     objectSrc: [
@@ -34,7 +36,7 @@ module.exports = contentSecurityPolicy({
       'data:',
       "www.googletagmanager.com",
       "static.ads-twitter.com",
-      'sc.lfeeder.com/*',
+      "sc.lfeeder.com/lftracker_v1_lYNOR8xK1oqaWQJZ.js",
       "'unsafe-eval'", // exception for Algolia instantsearch
       "'unsafe-inline'"
     ],
