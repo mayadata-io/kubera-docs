@@ -1,5 +1,5 @@
 ---
-title: Adding new cluster to Kubera Chaos
+title: Deploying new Agents
 
 intro: ''
 redirect_from:
