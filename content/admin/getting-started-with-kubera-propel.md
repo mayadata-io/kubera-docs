@@ -18,7 +18,7 @@ To know more about subscription and licensing <a href="https://kubera-docs.mayad
 To get started with Kubera Propel, login to Kubera and click on “Start Kubera Propel"
 <br><br>
 
-<a href="/assets/images/propel_main.png"><img class="image-with-border" src="/assets/images/propel_main.png"></a>
+<a href="/assets/images/propel_main.png" target="_blank"><img class="image-with-border" src="/assets/images/propel_main.png"></a>
 <br><br> 
 
 Next, enter the project name and click on “Create a project”. 
@@ -28,12 +28,12 @@ On successful creation of the project you will be redirected back to Kubera, whe
 <br><br>
 
 
-<a href="/assets/images/propel_license.png"><img class="image-with-border" src="/assets/images/propel_license.png"></a>
+<a href="/assets/images/propel_license.png" target="_blank"><img class="image-with-border" src="/assets/images/propel_license.png"></a>
 <br><br>
 
 You will now be redirected to Kubera Propel home screen.
 <br><br>
 
 
-<a href="/assets/images/propel1.png"><img class="image-with-border" src="/assets/images/propel1.png"></a>
+<a href="/assets/images/propel1.png" target="_blank"><img class="image-with-border" src="/assets/images/propel1.png"></a>
 <br><br>
