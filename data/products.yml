@@ -2,6 +2,6 @@
 # the product IDs match keys in lib/all-products.js
 # note this file should not be translated
 productsInOrder:
-  - desktop
-  - admin
-  - developers
+  - kubera-enterprise
+  - kubera-propel
+  - kubera-chaos
