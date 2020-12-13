@@ -15,9 +15,8 @@ versions:
     {% link_in_list /Architecture%}
     {% link_in_list /quickstart%}
     {% link_in_list /Getting-Started %}
-    {% link_in_list /Authentication %}
     {% link_in_list /User-management %}
-    {% link_in_list /Team-management%}
+    {% link_in_list /Authentication %}
     {% link_in_list /Upgrading%}
     {% link_in_list /Uninstalling%}
     {% link_in_list /Air-Gapped-environments%}
