@@ -1,7 +1,8 @@
 ---
-title: Kubera Documentation
-shortTitle: Kubera
+title: Kubera Enterprise Documentation
+shortTitle: Kubera Enterprise
 #intro: 'Get {% data variables.product.prodname_desktop %} set up to manage your project work. Authenticate to {% data variables.product.prodname_dotcom_the_website %} or {% data variables.product.prodname_enterprise %}, keep the app up-to-date, and review your preferred settings.'
+intro: 'Kubera Enterprise helps with the use of Kubernetes as a data plane. This section covers the documentation for installing Kubera Enterprise, getting started with the initial configuration, enterprise deployment configuration, launching Kubera modules and subscription management. Choose any of the topics below to explore more'
 redirect_from:
   - /kubera-enterprise/
 versions:
