@@ -3,7 +3,7 @@ title: Private Chaos Hub
 
 intro: ''
 redirect_from:
-  - /developers/private-chaos-hub
+  - /kubera-chaos/private-chaos-hub
 versions:
   free-pro-team: '*'
 ---

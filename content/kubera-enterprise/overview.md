@@ -1,7 +1,7 @@
 ---
 title: Overview 
 redirect_from:
-  - /desktop/overview
+  - /kubera-enterprise/overview
 versions:
   free-pro-team: '*'
 ---

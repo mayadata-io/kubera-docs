@@ -3,7 +3,7 @@ title: Creating new chaos workflows
 
 intro: ''
 redirect_from:
-  - /developers/creating-new-chaos-workflows
+  - /kubera-chaos/creating-new-chaos-workflows
 versions:
   free-pro-team: '*'
 ---

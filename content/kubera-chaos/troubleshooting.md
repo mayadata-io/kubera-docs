@@ -2,7 +2,7 @@
 title: Troubleshooting
 intro: ''
 redirect_from:
-  - /developers/troubleshooting
+  - /kubera-chaos/troubleshooting
 versions:
   free-pro-team: '*'
 ---

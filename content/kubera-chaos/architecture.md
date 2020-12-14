@@ -2,7 +2,7 @@
 title: Architecture
 intro: ''
 redirect_from:
-  - /developers/architecture
+  - /kubera-chaos/architecture
 versions:
   free-pro-team: '*'
 ---

@@ -3,7 +3,7 @@ title: Kubera Chaos
 shortTitle: Kubera Chaos
 intro: ''
 redirect_from:
-  - /developers
+  - /kubera-chaos
 versions:
   free-pro-team: '*'
 ---

@@ -3,7 +3,7 @@ title: Getting started with Kubera Chaos
 
 intro: ''
 redirect_from:
-  - /developers/getting-started-with-kubera-chaos
+  - /kubera-chaos/getting-started-with-kubera-chaos
 versions:
   free-pro-team: '*'
 ---

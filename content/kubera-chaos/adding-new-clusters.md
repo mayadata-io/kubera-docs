@@ -3,7 +3,7 @@ title: Deploying new Agents
 
 intro: ''
 redirect_from:
-  - /developers/adding-new-clusters
+  - /kubera-chaos/adding-new-clusters
 versions:
   free-pro-team: '*'
 ---

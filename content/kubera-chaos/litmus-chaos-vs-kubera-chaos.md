@@ -3,7 +3,7 @@ title: Litmus Chaos vs Kubera Chaos
 
 intro: ''
 redirect_from:
-  - /developers/litmus-chaos-vs-kubera-chaos
+  - /kubera-chaos/litmus-chaos-vs-kubera-chaos
 versions:
   free-pro-team: '*'
 ---

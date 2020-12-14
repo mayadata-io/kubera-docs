@@ -1,7 +1,7 @@
 ---
 title: User Management 
 redirect_from:
-  - /desktop/User-management
+  - /kubera-enterprise/User-management
 versions:
   free-pro-team: '*'
 ---

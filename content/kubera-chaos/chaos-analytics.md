@@ -3,7 +3,7 @@ title: Chaos Analytics
 
 intro: ''
 redirect_from:
-  - /developers/chaos-analytics
+  - /kubera-chaos/chaos-analytics
 versions:
   free-pro-team: '*'
 ---
