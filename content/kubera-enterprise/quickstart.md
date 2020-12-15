@@ -35,6 +35,7 @@ In order to install Kubera, you need to add the repository to your helm's config
 <pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
 <br><br>
 Execute the below mentioned command to install Kubera with default values, 
+or to install with domain and https "[Click here](/kubera-enterprise/installation-with-tls)"
 <pre>helm install kubera kubera/kubera-enterprise</pre>
 <br>
 Sample Output:

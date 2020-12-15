@@ -18,6 +18,7 @@ versions:
 {% topic_link_in_list /modules%}
 {% topic_link_in_list /User-management %}
 {% topic_link_in_list /Authentication %}
+{% link_in_list /installation-with-tls%}
 {% topic_link_in_list /Uninstalling%}
 {% topic_link_in_list /Troubleshooting%}
 {% topic_link_in_list /Kubera-Subscriptions%}
