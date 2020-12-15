@@ -1,5 +1,6 @@
 ---
-title: Quickstart 
+title: Setting up Kubera 
+shortTitle: QuickStart
 #intro: Setup KuberaEnterprise on kubernetes
 versions:
   free-pro-team: '*'
