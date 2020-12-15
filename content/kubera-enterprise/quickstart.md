@@ -1,5 +1,5 @@
 ---
-title: Setting up Kubera 
+title: Getting started with Kubera 
 shortTitle: QuickStart
 #intro: Setup KuberaEnterprise on kubernetes
 versions:
@@ -124,8 +124,7 @@ Password- kubera
 
 After changing the default credentials, your Kubera Enterprise is ready for basic use. As next steps, see
 
-- Configuring Secure [SSL](https)
+- Configuring [HTTPS for Kubera Enterprise](installation-with-tls)
 - Configuring [GitHub social authentication](ghauth)
-- Launching [Kubera modules](modules)
 - Onboarding [users](User-management)
 

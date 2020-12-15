@@ -1,5 +1,5 @@
 ---
-title: Deploying kubera Enterprise with ssl and Domain
+title: Configuring Kubera with HTTPS
 redirect_from:
   - /kubera-enterprise/installation-with-tls
 versions:
@@ -35,7 +35,7 @@ spec:
 </pre>  
 To apply the above YAML, execute:
 ```kubectl apply -f <yaml_name>```
- 
+
 ### Deploying  kubera Enterprise
 Execute the below mentioned command to install Kubera with domain
 

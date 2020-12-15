@@ -14,8 +14,6 @@ versions:
 {% topic_link_in_list /quickstart%}
 {% topic_link_in_list /Air-Gapped-environments%}
 {% topic_link_in_list /overview%}
-{% topic_link_in_list /features%}
-{% topic_link_in_list /modules%}
 {% topic_link_in_list /User-management %}
 {% topic_link_in_list /Authentication %}
 {% link_in_list /installation-with-tls%}
