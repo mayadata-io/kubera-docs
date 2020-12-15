@@ -9,6 +9,8 @@ versions:
 ---
 Kubera Chaos is the enterprise edition of Litmus Chaos. Kubera Chaos offers various additional benefits over Litmus Chaos, some of which are mentioned below:
 <br>
-<br><a href="/assets/images/developer/kubera-vs-litmus/KuberaChasVsLitmusNew.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/kubera-vs-litmus/KuberaChaosVSLitmusChaos.png">
+<br><center><img class="image-with-border" src="/assets/images/developer/kubera-vs-litmus/Difference table.png"></center>
 <br>
 <br>
+
+
