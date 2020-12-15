@@ -21,4 +21,4 @@ versions:
     {% link_in_list /Authentication %}
     {% link_in_list /Uninstalling%}
     {% link_in_list /Troubleshooting%}
-{% topic_link_in_list /Subscription-and-Plans %}
+{% topic_link_in_list /Kubera-Subscriptions%}

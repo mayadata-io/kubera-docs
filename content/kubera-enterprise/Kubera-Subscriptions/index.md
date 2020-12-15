@@ -1,5 +1,5 @@
 ---
-title: Subscription And Plans
+title: Kubera Subsciptions
 #shortTitle: customer
 redirect_from:
   - /kubera-enterprise/Subscription-and-Plans
