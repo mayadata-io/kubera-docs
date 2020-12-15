@@ -1,5 +1,5 @@
 ---
-title: Overview 
+title: Overview and Architecture
 redirect_from:
   - /kubera-enterprise/overview
 versions:
