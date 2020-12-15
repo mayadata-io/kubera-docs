@@ -11,14 +11,13 @@ versions:
 
 
 
-{% topic_link_in_list /Table-of-Contents %}
-    {% link_in_list /quickstart%}
-    {% link_in_list /Air-Gapped-environments%}
-    {% link_in_list /overview%}
-    {% link_in_list /features%}
-    {% link_in_list /modules%}
-    {% link_in_list /User-management %}
-    {% link_in_list /Authentication %}
-    {% link_in_list /Uninstalling%}
-    {% link_in_list /Troubleshooting%}
+{% topic_link_in_list /quickstart%}
+{% topic_link_in_list /Air-Gapped-environments%}
+{% topic_link_in_list /overview%}
+{% topic_link_in_list /features%}
+{% topic_link_in_list /modules%}
+{% topic_link_in_list /User-management %}
+{% topic_link_in_list /Authentication %}
+{% topic_link_in_list /Uninstalling%}
+{% topic_link_in_list /Troubleshooting%}
 {% topic_link_in_list /Kubera-Subscriptions%}
