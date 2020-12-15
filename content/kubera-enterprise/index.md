@@ -20,6 +20,7 @@ versions:
     {% link_in_list /Authentication %}
     {% link_in_list /Upgrading%}
     {% link_in_list /Uninstalling%}
+    {% link_in_list /installation-with-tls%}
     {% link_in_list /Air-Gapped-environments%}
     {% link_in_list /Troubleshooting%}
 {% topic_link_in_list /Subscription-and-Plans %}
