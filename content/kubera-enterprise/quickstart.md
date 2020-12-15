@@ -4,14 +4,32 @@ title: Quickstart
 versions:
   free-pro-team: '*'
 ---
-### Quickstart
-This guide serves as a concise documentation on how to install Kubera using <b>helm chart</b> with default values, onto the Kubernetes cluster.
+Kubera Enterprise is a software that helps with the running of Kubernetes as a data plane. Kubera is installed on any Kubernetes using helm. Typical steps involved in setting up Kubera in your environment will include the following steps.
+
+- Check pre-requisites such as helm and default storage classes in your Kubernetes cluster
+- Install Kubera using helm
+- Configure Kubera for secure https, onboard users
+- Launch and configure Kubera modules - Propel and Chaos
+
 ### Prerequisites
+
+Before you install using Kubera helm chart, make sure the following pre-requisites are met.
+
 - Kubernetes version 1.12.0 or above with RBAC enabled.
-- Allocating 2 vCPU and 4GB RAM for Kubera components is recommended.
+- Availability of  2 vCPU and 4GB memory for all of the Kubera components.
+- Default storage class is configured on your Kuberenetes
 ### Installing Helm v3
 To get started, ensure you have Helm v3 (v3.0.2 or above) installed. <u><a href="https://helm.sh/docs/intro/install/" target="_blank">Click here</a></u> to know the detailed steps for installation. 
 <br><br>
+
+---
+
+*Note*: If you are installing Kubera in air gap environement, see the  [air gap quickstart](Air-Gapped-environments)
+
+---
+
+
+
 ### Installing Kubera
 In order to install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
 <pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
@@ -51,15 +69,27 @@ kubera-ingress-nginx-controller-5969799668-s74bn   1/1     Running   0          
 kubera-mongodb-0                                   1/1     Running   0          24m
 </pre>
 <b>Note</b>: 
+
 <ul><li>For default configurations, Kubera is deployed in default namespace.</li>
 <li>Installation process can take upto few minutes, as it requires allocation of resources, starting of services etc.</li></ul>
-<br><br>
-URL to access the Kubera UI, <i><b>External_clusterIP:Port</b></i><br>
+<br>
+
+### Accessing Kubera
+
+<br>
+
+Kubera runs a management end point through a service called `Kubera-ingress-nginx=controller`. Access Kubera from your browser using the **External_clusterIP:port** combination. 
+
+
 To get the port number, execute:
+
 <pre>
 kubectl get svc
 </pre>
-Sample Output:
+
+
+*Sample Output:*
+
 <pre style="color:#9966ff">
 NAME                                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
 kubera-core-server                          ClusterIP   10.100.87.127    none         9002/TCP,9003/TCP            13h
@@ -69,10 +99,31 @@ kubera-ingress-nginx-controller-admission   ClusterIP   10.100.83.160    none   
 kubera-mongodb                              ClusterIP   10.100.127.128   none         27017/TCP                    13h
 kubernetes                                  ClusterIP   10.100.0.1       none         443/TCP                      2d13h
 </pre>
-The port corresponding to <b>kubera-ingress-nginx-controller</b> needs to be used.
+The IP address and port should be taken from the service <b>kubera-ingress-nginx-controller</b> .
 <br> <br>
+
+
+
+http://<clusterIP>:<port> gives you the login screen. Use the following default credentials to start and change the username and password. 
+
 <blockquote>
 Initial default Kubera credentials are as follows:
 <br>Username- admin<br>
 Password- kubera
 </blockquote>
+
+
+
+<br>
+<a href="/assets/images/kubera-login.png" target="_blank"><img class="image-with-border" src="/assets/images/kubera-login.png"></a>
+<br>
+
+
+
+After changing the default credentials, your Kubera Enterprise is ready for basic use. As next steps, see
+
+- Configuring Secure [SSL](https)
+- Configuring [GitHub social authentication](ghauth)
+- Launching [Kubera modules](modules)
+- Onboarding [users](User-management)
+
