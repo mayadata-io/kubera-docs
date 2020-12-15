@@ -105,7 +105,7 @@ The IP address and port should be taken from the service <b>kubera-ingress-nginx
 
 
 
-http://<clusterIP>:<port> gives you the login screen. Use the following default credentials to start and change the username and password. 
+http://&lt;clusterIP&gt;:&lt;port&gt; gives you the login screen. Use the following default credentials to start and change the username and password. 
 
 <blockquote>
 Initial default Kubera credentials are as follows:
