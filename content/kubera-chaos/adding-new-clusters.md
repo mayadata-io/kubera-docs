@@ -77,4 +77,4 @@ To verify, if the registration process was successful you can view the list of c
 <br>
 To view the list of all the agents connected to your portal go to the Agents section. This page displays the connected agents and their details such as their status, connection date, number of schedules, number of workflows etc. 
 <br>
-<br><center><img class="image-with-border" src="/assets/images/developer/adding-new-cluster/ListOfAgents.png"></center>
+<br><center><a href="/assets/images/developer/adding-new-cluster/AgentDashboardNew.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/adding-new-cluster/AgentDashboardNew.png"></center>
