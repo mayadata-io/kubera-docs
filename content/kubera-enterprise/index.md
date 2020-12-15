@@ -11,16 +11,14 @@ versions:
 
 
 
-{% topic_link_in_list /Table-of-Contents %}
-    {% link_in_list /overview%}
-    {% link_in_list /Architecture%}
-    {% link_in_list /quickstart%}
-    {% link_in_list /Getting-Started %}
-    {% link_in_list /User-management %}
-    {% link_in_list /Authentication %}
-    {% link_in_list /Upgrading%}
-    {% link_in_list /Uninstalling%}
-    {% link_in_list /installation-with-tls%}
-    {% link_in_list /Air-Gapped-environments%}
-    {% link_in_list /Troubleshooting%}
-{% topic_link_in_list /Subscription-and-Plans %}
+{% topic_link_in_list /quickstart%}
+{% topic_link_in_list /Air-Gapped-environments%}
+{% topic_link_in_list /overview%}
+{% topic_link_in_list /features%}
+{% topic_link_in_list /modules%}
+{% topic_link_in_list /User-management %}
+{% topic_link_in_list /Authentication %}
+{% link_in_list /installation-with-tls%}
+{% topic_link_in_list /Uninstalling%}
+{% topic_link_in_list /Troubleshooting%}
+{% topic_link_in_list /Kubera-Subscriptions%}
