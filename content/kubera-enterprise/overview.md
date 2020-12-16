@@ -23,7 +23,7 @@ Kubera Propel is a module of Kubera Enterprise. Kubera Propel is based upon the 
 
 <br>
 
-<img alt="Kubera Propel" style="width:200px;" src="/assets/images/kubera-chaos-light-bg.png">
+<img alt="Kubera Chaos" style="width:200px;" src="/assets/images/kubera-chaos-light-bg.png">
 <br>
 
 Kubera Chaos is a module of Kubera Enterprise. Kubera Chaos is based upon the CNCF project Litmus Chaos. Litmus is a widely used Chaos Engineering project, consisting of an easy to extend framework for chaos engineering and a chaos hub, containing popular chaos experiments. Litmus and Kubera Chaos are often used both in CI/CD pipelines and in production environments to improve the resilience of Kubernetes environments including workloads running on Kubernetes and Kubernetes deployments themselves. 

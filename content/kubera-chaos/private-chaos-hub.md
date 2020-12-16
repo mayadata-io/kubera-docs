@@ -1,6 +1,6 @@
 ---
 title: Private Chaos Hub
-
+shortTitle: Private Chaos Hubs
 intro: ''
 redirect_from:
   - /kubera-chaos/private-chaos-hub

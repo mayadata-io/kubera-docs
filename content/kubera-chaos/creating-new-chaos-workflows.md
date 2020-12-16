@@ -1,6 +1,6 @@
 ---
 title: Creating new chaos workflows
-
+shortTitle: Chaos Workflows
 intro: ''
 redirect_from:
   - /kubera-chaos/creating-new-chaos-workflows
