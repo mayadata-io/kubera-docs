@@ -8,23 +8,28 @@ versions:
   free-pro-team: '*'
 ---
 <br><br>
-The authentication tab, under the settings section, helps the admin to manage settings for user authentication. The admin can specify the way the users can log into Kubera Portal and other products.
+A Kubera administrator can specify the ways the users can log into Kubera Portal and other products. The authentication tab, under the settings section, helps the admin manage user authentication settings. 
 <br><br>
-There are two ways for user authentication, Using local authentication or using GitHub OAuth. By default, local authentication is enabled.
+There are two ways for user authentication, Using local authentication or using GitHub OAuth. By default, only local authentication is enabled.
 <br><br>
 
 ### Local Authentication:
 
-This method of authentication allows the users to login to Kubera portal using local username and password.
+This method of authentication allows the users to log in to Kubera portal using a local username and password.
 <br><br>
 <a href="/assets/images/authentication1.png" target="_blank"><img class="image-with-border" src="/assets/images/authentication1.png"></a>
 <br><br>
 
 ### GitHub Authentication:
 
-Admin can enable authentication using Github. To use this method of authentication, enter the following details:
-* Client ID and secret ID:
-* Choose a GitHub auth, select “All members of the organization”  to grant access to all the members of the specified organization or select “  Open for entire Github” to  grant access to Kubera Portal and its modules.
+Admin can enable GitHub authentication. To use this method of authentication, enter the following details acquired from GitHub:
+* Client ID
+* Secret ID
+
+To acquire, in your GitHub account, do the following: 
+1. Choose a GitHub auth
+2. Select “All members of the organization” to grant access to all the members of the specified organization, or select “Open for entire Github” to grant access to Kubera Portal and its modules.
+3. 
 
 <br><br>
 <a href="/assets/images/authentication2.png" target="_blank"><img class="image-with-border" src="/assets/images/authentication2.png"></a>
