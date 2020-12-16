@@ -75,18 +75,6 @@
                   <div class="search-overlay-desktop"></div>
                 </div>
                 {% endif %}
-                {% endfor %}
-              </div>
-            </div> -->
-            <!-- GitHub.com homepage and 404 page has a stylized search; Enterprise homepages do not -->
-            {% if page.relativePath != 'index.md' and error != '404' %}
-            <div class="pt-3 pt-md-0 d-md-inline-block ml-md-3 bord'er-top border-md-top-0 header-search-bar">
-              {% include search-form %}
-              <div id="search-results-container"></div>
-              <div class="search-overlay-desktop"></div>
-            </div>
-            {% endif %}
-
           </div>
         </div>
       </div>
