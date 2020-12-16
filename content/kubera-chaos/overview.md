@@ -33,7 +33,7 @@ Kubera Chaos module is part of Kubera Enterprise which can serve the chaos engin
 
 A Kubera agent connects a given Kubernetes cluster or namespace to a given Kubera module. In case of Kubera Chaos, the Kubera Chaos Agent connects a Kubernetes cluster to a user's Kubera Chaos project. 
 
-Users are Kubera have their own projects on Kubera Chaos. Each user has one Chaos workspace or project. User deploys Kubera chaos agent on a Kubernetes cluster or a namespaces to connect it to Kubera Chaos. Once an agent is deployed and connected, user can schedule chaos workflows through that agent to run them on the given cluster or on the given namespace(s). 
+Users on Kubera have their own projects for Kubera Chaos. Each user has one Chaos workspace or project. User deploys Kubera chaos agent on a Kubernetes cluster or a namespace to connect it to Kubera Chaos. Once an agent is deployed and connected, user can schedule chaos workflows through that agent to run them on the given cluster or on the given namespace(s). 
 
 
 

@@ -9,11 +9,8 @@ versions:
 ---
 
 
-{% topic_link_in_list /Table-of-Contents %}
-    {% link_in_list /introduction %}
-    {% link_in_list /architecture %}
-    {% link_in_list /getting-started-with-kubera-propel %}
-    {% link_in_list /adding-new-kubernetes-cluster-to-propel %}
-    {% link_in_list /benchmarking-your-storage %}
-    {% link_in_list /performance-tuning %}
-    {% link_in_list /troubleshooting %}
+{% topic_link_in_list /introduction %}
+{% topic_link_in_list /getting-started-with-kubera-propel %}
+{% topic_link_in_list /adding-new-kubernetes-cluster-to-propel %}
+{% topic_link_in_list /benchmarking-your-storage %}
+{% topic_link_in_list /troubleshooting %}
