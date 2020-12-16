@@ -8,64 +8,51 @@ versions:
   free-pro-team: '*'
 ---
 
-Chaos engineering plays a vital role in increasing the resilience of today’s  cloud native, highly dynamic applications and infrastructure. 
-Kubernetes developers and SREs use Kubera Chaos to increase application resilience by practicing chaos engineering through pre-defined chaos workflows and chaos monitoring tools. 
-Kubera Chaos is the enterprise edition of the broadly used open source chaos engineering platform LitmusChaos.
+Kubera Chaos is a module of Kubera Enterprise product. Kubera Chaos is based on the popular open source chaos engineering project LitmusChaos.  LitmusChaos project was founded by MayaData and has been donated to CNCF in 2020. LitmusChaos has been growing rapidly with a vibrant community of users and contributors. 
 
-Kubera Chaos gives you the ability to design new workflows or choose from the existing ones which cover most of the required scenarios, generate complex gitops controlled workflows.   This scales the chaos engineering efforts and increases resilience. 
-The "My Hub", in Kubera Chaos Portal provides a bunch of experiments from the default hub or can create a new hub on their own by connecting their Git account which can be used by SREs and developers to collaborate to design new chaos experiments. These workflows can be easily integrated with CI & CD platforms such as GitHub actions, Gitlab CI and Spinnaker.
+MayaData continues to contribute heavily into LitmusChaos. LitmusChaos users looking for enterprise support can use Kubera Chaos. MayaData upstreams all the changes made to Kubera Chaos as part of the enterprise users support requirements. 
+
+### LitmusChaos vs Kubera Chaos
+
+The core functionality of LitmusChaos, user experience and APIs remains same in Kubera Chaos. Kubera Chaos provides enterprise support, integration with GitOps, enterprise authentication modules, enterprise CI tools such as spinnaker, Jenkins X, GitLab and GitHub actions. 
+
+Litmus community users will have the same experience while using and managing Kubera Chaos. The declarative YAML content of a chaos workflow remains same between Kubera Chaos and Litmus. 
 
 <br>
+
+<img alt="Kubera Chaos vs Litmus" style="width:800px;" src="/assets/images/kuberachaos-litmus.png">
 <br>
-Kubera-Enterprise is the umbrella product in which the modules Kubera Chaos and Kubera Propel are present. Kubera Chaos can be run from the web UI of Kubera-Enterprise.  
-<br><br>
 
-### Kubera Agent
-
-At the time of instantiating Kubera chaos, a kubera chaos agent is installed on the same cluster where Kubera Enterprise is running. The agent acts as a daemon which communicates with Kubera chaos so that workflows can be scheduled on the cluster. These workflows can be run inside any namespace in the cluster where the agent is installed.
-
-To run chaos experiments on another cluster, Kubera chaos does not need to be installed again. It is only the kubera chaos agent that needs to be installed on the cluster using kubectl (or yaml). At the time of running the workflow, you can select the agent that you want the workflow to run on, from the web UI.
-
-Kubera chaos has a number of core components that are set up during the installation of Kubera agent. 
- <br><br>
-
-### Chaos Operator
-
-In Kubernetes, an operator is used to automate the task which might usually be done by a human. In Kubera Chaos, it is called a chaos operator. It monitors the state of the custom resources - Chaos Experiments, Chaos Engine, Chaos Probes and Chaos Results. 
-<br><br>
-
-### Chaos Engine    
-
-Chaos Engine is a custom resource which links the client application (which has to be tested) to the Chaos experiments.
-<br><br><p style="color:white;font-size:32px;">Chaos Experiments:</p>    
-
-Chaos Experiment is a CR and is available as YAML files on Chaos Hub. For more details visit <a href="https://docs.litmuschaos.io/">Chaos Hub documentation</a>.
-
-Chaos probes are pluggable checks that can be defined within the ChaosEngine for any chaos experiment. The experiment pods execute these checks based on the mode they are defined in & factor their success as necessary conditions in determining the verdict of the experiment (along with the standard “in-built” checks).
-Kubera chaos  currently supports three types of probes:
-
-- httpProbe: To query health/downstream URIs
-- cmdProbe: To execute any user-desired health-check function implemented as a shell command
-- k8sProbe: To perform CRUD operations against native & custom Kubernetes resources
-
-
-
-### Chaos Results
-
-ChaosResult resource holds the results of a ChaosExperiment with a namespace scope. It is created or updated at runtime by the experiment itself. It holds important information like the ChaosEngine reference, Experiment State, Verdict of the experiment (on completion), salient application/result attributes. 
-<br><br>
-
-### Chaos Exporter
-
-Exporter is a service which fetches metrics from our target and converts them into format that prometheus understands. Prometheus scrapes this data from the /metrics endpoint. 
-
-
-
-
-
-Kubera Chaos is the enterprise edition of Litmus Chaos. Kubera Chaos offers various additional benefits over Litmus Chaos, some of which are mentioned below:
 <br>
-<br><a href="/assets/images/developer/kubera-vs-litmus/KuberaChaosVSLitmusChaos.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/kubera-vs-litmus/KuberaChaosVSLitmusChaos.png">
+
+
+
+### Kubera Chaos Agent
+
+Kubera Chaos module is part of Kubera Enterprise which can serve the chaos engineering needs of a given team or some times the entire enterprise. Kubera Chaos can act as a central chaos engineering portal for various teams owning or operating different Kubernetes clusters or namespaces in a multicloud environment. 
+
+A Kubera agent connects a given Kubernetes cluster or namespace to a given Kubera module. In case of Kubera Chaos, the Kubera Chaos Agent connects a Kubernetes cluster to a user's Kubera Chaos project. 
+
+Users are Kubera have their own projects on Kubera Chaos. Each user has one Chaos workspace or project. User deploys Kubera chaos agent on a Kubernetes cluster or a namespaces to connect it to Kubera Chaos. Once an agent is deployed and connected, user can schedule chaos workflows through that agent to run them on the given cluster or on the given namespace(s). 
+
+
+
+### Developer experience
+
+Teams can collaborate on the chaos experiments that are hosted at a private GitHub repository. My Hubs feature of Kubera Chaos allows private chaos hubs to be maintained at a per project level. A developer can create and maintain a new chaos repository, connect it to Kubera Chaos, construct new chaos workflows using the experiments in this new hub and run them on Kubernetes resource targets. 
+
 <br>
+
+<img alt="Kubera Chaos developer experience" style="width:800px;" src="/assets/images/kuberachaos-dev.png">
 <br>
+
+
+
+### Getting started
+
+After installing Kubera Enterprise, the module is Kubera Chaos is launched by the admin. All the users on Kubera will have their own Kubera Chaos workspace and they can start their Kubernetes chaos engineering efforts and collaborate with their team members from that portal.
+
+See Kubera Chaos [Getting Started](getting-started-with-kubera-chaos) article.
+
+
 
