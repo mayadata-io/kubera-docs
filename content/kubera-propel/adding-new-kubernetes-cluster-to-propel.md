@@ -64,6 +64,10 @@ To add your Kubernetes cluster to the Kubera Propel:
 <br><br>
 <a href="/assets/images/propel8.png" target="_blank"><img class="image-with-border" src="/assets/images/propel8.png"></a>
 <br><br>
+<a href="/assets/images/propel11_new.png" target="_blank"><img class="image-with-border" src="/assets/images/propel11_new.png"></a>
+<br><br>
+<a href="/assets/images/propel12_new.png" target="_blank"><img class="image-with-border" src="/assets/images/propel12_new.png"></a>
+<br><br>
 
 
 * Verify and apply if all the storage Nodes and application nodes have been selected. Similarly, we have to configure Pools, Storage Class.
