@@ -24,10 +24,27 @@
     <header class="container-xl px-3 px-md-6 py-4 position-relative d-flex flex-justify-between width-full {% if error == '404' %} d-md-none {% endif %}">
 
       <div class="d-flex flex-items-center d-lg-none" style="z-index: 3;" id="github-logo-mobile">
-        <a href="/{{ currentLanguage }}" aria-hidden="true">
+        <a href="/{{ currentLanguage }}" class="text-white" aria-hidden="true">
+          <svg height="25" viewBox="0 0 69 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="22.868" y="2.52368" width="7.04165" height="31.6874" transform="rotate(45 22.868 2.52368)"
+              fill="black" />
+            <rect x="0.46286" y="24.9307" width="7.04165" height="31.6874" transform="rotate(-45 0.46286 24.9307)"
+              fill="black" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.5004 24.9342L39.626 49.0598L42.0888 46.597L37.122 41.6303L53.8221 24.9302L37.122 8.23004L42.0847 3.26734L39.626 0.808624L15.5004 24.9342Z"
+              fill="black" />
+            <path d="M46.3675 2.52527L41.3883 7.50447L63.7947 29.9109L68.7739 24.9317L46.3675 2.52527Z" fill="#C34FC5" />
+            <path d="M68.7739 24.9317L63.7947 19.9525L41.3883 42.3589L46.3675 47.3381L68.7739 24.9317Z" fill="#C34FC5" />
+          </svg>
+        </a>
+        <a href="/{{ currentLanguage }}" class=" product d-flex text-gray-dark no-underline no-wrap pl-2 flex-auto">
+          <span class="title">{% data ui.header.title %} &nbsp;</span> <span
+            class="post-title">{% data ui.header.post_title %}</span>
+        </a>
+        <!-- <a href="/{{ currentLanguage }}" aria-hidden="true">
           {% octicon "mark-github" height="32" class="text-black" %}
         </a>
-        <a href="/{{ currentLanguage }}" class="h4-mktg text-gray-dark no-underline no-wrap pl-2">{% data ui.header.github_docs %}</a>
+        <a href="/{{ currentLanguage }}" class="h4-mktg text-gray-dark no-underline no-wrap pl-2">{% data ui.header.github_docs %}</a> -->
       </div>
 
       <div class="width-full">

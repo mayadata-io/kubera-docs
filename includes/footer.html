@@ -5,10 +5,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 product">
-              <div class="row d-flex footer-row-1">
+              <div class="row d-sm-block d-md-flex d-lg-flex footer-row-1">
                 <div class="col-md-6 col-lg-6">
                   <p class="pb-2 font-weight-bold">Interested in our newsletter?</p>
-                  <form class="form-inline py-3 py-md-0 d-flex" [formGroup]="leadForm" (ngSubmit)="formSubmit()"
+                  <form class="form-inline py-3 py-md-0 d-sm-block d-md-flex d-lg-flex" [formGroup]="leadForm" (ngSubmit)="formSubmit()"
                     id={{GTM.TRIGGERS.NEWSLETTER}} novalidate>
                     <div class="form-group mr-sm-3 pb-3 pb-md-0 email--input-div">
                       <input type="email"
@@ -71,7 +71,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row d-flex mt-4 flex-justify-between">
+              <div class="row d-sm-block d-md-flex d-lg-flex mt-4 flex-justify-between">
                 <div class="col-md-4 col-lg-4 d-flex flex-justify-around">
                   <div> 
                     <a href="https://mayadata.io/" target="_blank"><img src="/assets/images/kubera-png/mayadata-white.svg" alt=""></a>
