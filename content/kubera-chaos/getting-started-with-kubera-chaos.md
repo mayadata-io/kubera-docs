@@ -8,15 +8,14 @@ versions:
   free-pro-team: '*'
 ---
 
-
 <blockquote>
- Kubera Chaos is an offering from MayaData to it’s enterprise grade customers. We offer a 15 day free trial license to all our customers.  
-To know more about subscription and licensing <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/subscriptions">click here</a>.
+ Kubera Enterprise is in Tech Preview. If you are interested in participating through guided trials, register yourself <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview" target="_blank">here</a>
 </blockquote>
 
 <br><br>
 To get started with Kubera Chaos, login to <u><a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/kubera-enterprise/quickstart#accessing-kubera" target="_blank">Kubera</a></u> and click on <b>Start Kubera Chaos</b>. This activates the Kubera Chaos portal based on your subscription plan, or for new users starts a trial plan.
 <br><br>
+
 <center><a href="/assets/images/developer/Getting-started/Core_Landing_page.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/Getting-started/Core_Landing_page.png" width="800"></a></center>
 <br><br>
 Next, click on the navigation bar on the top left corner of your screen. This will provide you an option to switch between modules. Click on <b>Kubera chaos</b>
