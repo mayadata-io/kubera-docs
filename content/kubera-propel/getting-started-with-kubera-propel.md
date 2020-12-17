@@ -39,10 +39,8 @@ You will now be redirected to Kubera Propel home screen.
 
 
 <br><br>
-<a href="/assets/images/propel5_new.png" target="_blank"><img class="image-with-border" src="/assets/images/propel5_new.png"></a>
+<a href="/assets/images/PropelLandingPage.png" target="_blank"><img class="image-with-border" src="/assets/images/PropelLandingPage.png"></a>
 <br><br>
 
-You are all set to use Kubera Propel. Next, click on <b>Configure Storage on this kubernetes cluster</b> to proceed further.
-<br><br>
-<a href="/assets/images/propel6_new.png" target="_blank"><img class="image-with-border" src="/assets/images/propel6_new.png"></a>
-<br><br>
+You are all set to use Kubera Propel. Move to the next section to Configure storage on this Kubernetes cluster.
+
