@@ -7,14 +7,17 @@ redirect_from:
 versions:
   free-pro-team: '*'
 ---
-
+To configure your storage on this kubernetes cluster, click on <b>Configure Storage on this Kuberenets cluster</b> card present on the right side of your screen.
+<br><br>
+<a href="/assets/images/propel6_new.png" target="_blank"><img class="image-with-border" src="/assets/images/propel6_new.png"></a>
+<br><br>
 * Kubera Propel gives the option to segregate storage and application nodes.
 
 * Select the Nodes button which will help you in configuring your Storage Nodes and Application nodes.
 
-* You can select the nodes which you want based on the performance and the hardware specifications of that node.
+* Select the nodes based on the performance and the hardware specifications.
 
-* Nodes can be labelled as well in the kubernetes cluster and the same can be used in the Kubera Propel UI as the selection criteria. Suppose if you want to select a particular  labelled node or group of nodes, the same can be selected from propel UI.
+* Kubernetes clusters allow you to label nodes. These labels can be used as a selection criteria and can be selected from Kubera Propel UIcriteria.
 
 
 For configuring storage nodes, click on Configure Storage on Nodes and the nodes will be auto detected. Select all the nodes and click on <b>Next</b>
@@ -24,25 +27,23 @@ For configuring storage nodes, click on Configure Storage on Nodes and the nodes
 
 
 
-* After the selection of storage nodes, you can configure similarly the application nodes.
+* After the selection of storage nodes, you can similarly configure the application nodes.
 
-* Select the nodes with iscsi client installed.
+* Select the nodes with iscsi client installed. In case, you want to select a new application node that doesn’t have iscsi client installed, Kubera propel gives you the ability to install iscsi clinet from Propel UI itseld.
 
-* You can also get the iscsi client installed from the Propel UI if required or you want to select a new application node which doesn’t have the iscsi client already installed.
-
-* Click on "Select All", if you consider using all the nodes as Storage Nodes.
+* Click on <b>Select All</b>, if you want to configure all the available nodes as Storage Nodes.
 
 Next page will list all the selected storage nodes with their resource limits set like "HugePages, CPU and Memory". Click on <b>Next</b>
 <br><br>
 <a href="/assets/images/propel9.png" target="_blank"><img class="image-with-border" src="/assets/images/propel9.png"></a>
 <br><br>
 
-Select Application Nodes on the next scren and click on <b>Next</b>
+Select Application Nodes from the list of nodes displayed on the screen and click on <b>Next</b>.
 <br><br>
 <a href="/assets/images/propel10.png" target="_blank"><img class="image-with-border" src="/assets/images/propel10.png"></a>
 <br><br>
 
-Verify all the nodes selected selected for Storage and Application and click on <b>Apply</b>
+Verify all the nodes selected for Storage and Application and click on <b>Apply</b>.
 <br><br>
 <a href="/assets/images/propel11.png" target="_blank"><img class="image-with-border" src="/assets/images/propel11.png"></a>
 <br><br>
@@ -51,7 +52,7 @@ Verify all the nodes selected selected for Storage and Application and click on 
 <a href="/assets/images/propel12.png" target="_blank"><img class="image-with-border" src="/assets/images/propel12.png"></a>
 <br><br>
 
-Verify the status of the PODS. You should be able to see propel PODS created.
+Verify the status of the pods. You should be able to see propel pods in running state.
 <pre>
 kubectl get pods
 </pre>
@@ -69,7 +70,7 @@ propel-webapp-7cdf65bcb7-7p5df                     1/1     Running   0          
 </pre>
 
 
-Verify the status of the PODS in mayastor namespace.
+next, verify the status of the pods in mayastor namespace.
 <pre>
 kubectl get pods -n mayastor
 </pre>
@@ -87,13 +88,13 @@ nats-5fc4d79d66-lpgjd   1/1     Running   0          6m36s
 </pre>
 
 <br><br>
-* Next create storage pools and select the Storage nodes to form the Pools.
+* Next, create storage pools and select the Storage nodes to form the Pools.
 
 * Either you click on “Select All” to form the storage pool with every storage node or you can select the storage node as per choice.
 
 * Disk information can be obtained by selecting the individual disk attached to Storage Node.
 
-* Selecting  the storage node will give details like “Disk Name” “Size” “Disk type” etc.
+* Selecting  the storage node will give details like “Disk Name”, “Size”, “Disk type” etc.
 
 * You also get the flexibility  to select the disks connected with storage nodes as per requirement depending on the disk type and file type supported.
 <br><br>
@@ -148,8 +149,8 @@ This StorageClass can be used to provision applications by the user.
 
 <b>Adding new Kubernetes clusters to Propel:</b>
 
-* Click on the "Clusters tab". Here you can either select an existing cluster or you can add a new    cluster. 
-* Click on "Add new cluster" to get a new cluster added to the existing list of clusters if any.
+* Click on the <b>Clusters tab</b>. Here you can either select an existing cluster or you can add a new  cluster. 
+* Click on <b>Add new cluster</b> to get a new cluster added to the existing list of clusters if any.
 <br><br>
 <a href="/assets/images/propel2.png" target="_blank"><img class="image-with-border" src="/assets/images/propel2.png"></a>
 <br><br>
@@ -157,7 +158,7 @@ This StorageClass can be used to provision applications by the user.
 <a href="/assets/images/propel3.png" target="_blank"><img class="image-with-border" src="/assets/images/propel3.png"></a>
 <br><br>
 <br><br>
-* Copy and execute the lines of code visible in the Pop-Up screen on your command prompt to connect your cluster with Propel. After successfully executing the command in the kubernetes cluster command prompt, click on the tab which says: “Connect the cluster”.
+* Copy and execute the lines of code visible in the Pop-Up screen on your command prompt to connect your cluster with Propel. After successfully executing the command in the kubernetes cluster command prompt, click on the tab which says: <b>Connect the cluster</b>.
 
 * Once it is done, the newly added cluster will be visible in the “clusters” tab.
 
