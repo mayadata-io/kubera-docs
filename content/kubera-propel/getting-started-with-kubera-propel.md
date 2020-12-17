@@ -9,8 +9,7 @@ versions:
 ---
 
 <blockquote>
- Kubera Propel is an offering from MayaData to it’s enterprise grade customers. We offer a 15 day free trial license to all our customers.  
-To know more about subscription and licensing <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/subscriptions">click here</a>.
+ Kubera Enterprise is in Tech Preview. If you are interested in participating through guided trials, register yourself <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview" target="_blank">here</a>
 </blockquote>
 
 <br><br>
