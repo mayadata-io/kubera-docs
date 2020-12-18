@@ -34,33 +34,37 @@ To get started, ensure you have Helm v3 (v3.0.2 or above) installed. <u><a href=
 ### Installing Kubera
 In order to install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
 <pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
-<br><br>
-Execute the below mentioned command to install Kubera with default values, 
-or to install with domain and https "[Click here](/kubera-enterprise/installation-with-tls)"
-<pre>helm install kubera kubera/kubera-enterprise</pre>
+
+In this document, we will be deploying the Kubera components in kubera namespace.
+To create a new namespace, execute:
+<pre>kubectl create ns kubera</pre>
+
+Next, execute the below mentioned command to install Kubera with default values, 
+or to install with domain and https "[Click here](/kubera-enterprise/installation-with-tls)".
+
+<pre>helm install kubera kubera/kubera-enterprise -n kubera</pre>
 <br>
 Sample Output:
 <br>
 <pre style="color:#9966ff">
 NAME: kubera
 LAST DEPLOYED: Sun Dec 13 20:50:20 2020
-NAMESPACE: default
+NAMESPACE: kubera
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
-</pre>  
-This deploys kubera in default namespace. 
+</pre>   
 <br><br>
 To install kubera with custom configuration, get the <b>values.yaml</b> to your local repo, and edit it as per your requirment. To get values.yaml, execute:
 <pre>
 wget https://charts.mayadata.io/values.yaml
 </pre> 
  Edit/add the required fields. Next, to install Kubera using the custom configuration, execute:
-<pre>helm install kubera kubera/kubera-enterprise  -f values.yaml</pre> 
+<pre>helm install kubera kubera/kubera-enterprise  -f values.yaml -n kubera</pre> 
 <br>
 Verify the status of the pods.:
 <pre>
-kubectl get pods -n &lt; kubera_namespace &gt;
+kubectl get pods -n kubera
 </pre>
 Sample Output:
 <pre style="color:#9966ff">
@@ -72,7 +76,7 @@ kubera-mongodb-0                                   1/1     Running   0          
 </pre>
 <b>Note</b>: 
 
-<ul><li>For default configurations, Kubera is deployed in default namespace.</li>
+<ul>
 <li>Installation process can take upto few minutes, as it requires allocation of resources, starting of services etc.</li></ul>
 <br>
 
