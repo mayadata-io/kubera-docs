@@ -12,8 +12,10 @@ versions:
  Kubera Enterprise is in Tech Preview. If you are interested in participating through guided trials, register yourself <a href="https://go.mayadata.io/register-for-kubera-chaos-and-propel-technical-preview" target="_blank">here</a>
 </blockquote>
 
-<br><br>
-<br><br>
+### Prerequisites
+- Attached disks must be NVMe disks.
+- A total of 1024 HugePages. To know the detailed steps to enable HugePage support click <a href="https://mayastor.gitbook.io/introduction/quickstart/preparing-the-cluster#configure-mayastor-nodes-msns" target="_blank">here</a>. 
+<hr>
 To get started with Kubera Propel, login to <u><a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/kubera-enterprise/quickstart#accessing-kubera" target="_blank">Kubera</a></u> and click on <b>Start Kubera Propel</b>. This activates the Kubera Propel portal based on your subscription plan, or for new users starts a trial plan.
 <br><br>
 <a href="/assets/images/propel_main.png" target="_blank"><img class="image-with-border" src="/assets/images/propel_main.png"></a>

@@ -55,10 +55,7 @@ REVISION: 1
 TEST SUITE: None
 </pre>   
 <br><br>
-To install kubera with custom configuration, get the <b>values.yaml</b> to your local repo, and edit it as per your requirment. To get values.yaml, execute:
-<pre>
-wget https://charts.mayadata.io/values.yaml
-</pre> 
+To install kubera with custom configuration, get the <b><u><a href="https://github.com/mayadata-io/kubera-charts/blob/master/kubera-enterprise/values.yaml" target="_blank">values.yaml</a></u></b> to your local repo, and edit it as per your requirment.	<br>
  Edit/add the required fields. Next, to install Kubera using the custom configuration, execute:
 <pre>helm install kubera kubera/kubera-enterprise  -f values.yaml -n kubera</pre> 
 <br>

@@ -1,5 +1,5 @@
 ---
-title: Deploying new Agents
+title: Deploying new Chaos agents
 
 intro: ''
 redirect_from:
@@ -11,36 +11,23 @@ versions:
 To connect new agents to your portal, follow the below mentioned steps:
 - Go to your terminal and download <b>Kuberactl</b> latest binaries. To get Kuberactl binaries execute the below-mentioned command based your OS- 
 <br>
-For Linux,
- <pre>
- wget http://asset.mayadata.io/kuberactl/latest/kuberactl_latest_Linux_x86_64.tar.gz
- </pre>
- <pre>
- wget http://asset.mayadata.io/kuberactl/latest/kuberactl_latest_Linux_i386.tar.gz
- </pre>
+For Linux(64 bit), 
+ <pre>wget http://asset.mayadata.io/kuberactl/latest/kuberactl_latest_Linux_x86_64.tar.gz</pre>
+ For Linux(32 bit),
+<pre>wget http://asset.mayadata.io/kuberactl/latest/kuberactl_latest_Linux_i386.tar.gz</pre>
  <br>
  For Darwin,
- <pre>
- wget http://asset.mayadata.io/kuberactl/latest/kuberactl_latest_Darwin_x86_64.tar.gz
- </pre>
+ <pre>wget http://asset.mayadata.io/kuberactl/latest/kuberactl_latest_Darwin_x86_64.tar.gz</pre>
  Next, extract the .gz file.
- <pre>
- tar -zxvf <b style="color:red">file_name</b>
- </pre>
+ <pre>tar -zxvf <b style="color:red">file_name</b></pre>
   <br>
   To verify the setup, execute:
-  <pre>
-  ./kuberactl version
-  </pre>
+  <pre>./kuberactl version</pre>
   Sample Output:
-  <pre style="color:#9966ff">
-  Kuberactl version:  v0.1.0
-  </pre>
+  <pre style="color:#9966ff">Kuberactl version:  v0.1.0</pre>
 - <b>Registering an agent</b>
    To register a new chaos agent, execute:
-   <pre>
-   ./kuberactl chaos agent register
-   </pre> 
+   <pre>./kuberactl chaos agent register</pre> 
    Next, you need to enter Kubera Core details to Login to your Kubera account.
    Fields to be filled in:
    - <b>Kubera Core URL</b>: Enter the URL used to access the Kubera UI. <br>
