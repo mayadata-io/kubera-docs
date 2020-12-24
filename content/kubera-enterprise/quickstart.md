@@ -87,7 +87,7 @@ Kubera runs a management end point through a service called `Kubera-ingress-ngin
 To get the port number, execute:
 
 <pre>
-kubectl get svc
+kubectl get svc -n kubera
 </pre>
 
 
