@@ -24,7 +24,7 @@ For Linux(64 bit),
   To verify the setup, execute:
   <pre>./kuberactl version</pre>
   Sample Output:
-  <pre style="color:#9966ff">Kuberactl version:  v0.1.0</pre>
+  <pre style="color:#9966ff">Kuberactl version:  v0.2.0</pre>
 - <b>Registering an agent</b>
    To register a new chaos agent, execute:
    <pre>./kuberactl chaos agent register</pre> 
