@@ -23,7 +23,7 @@ Kubera Propel uses FIO tester against the underlying PV for performing the stora
 Once you click on <b>Run Storage Test</b>, the next screen will let you create the test where you can add the “Test Name” as per your choice.
 
 <br><br>
-<a href="/assets/images/propel_FIO.png" target="_blank"><img class="image-with-border" src="/assets/images/propel_FIO.png"></a>
+<a href="/assets/images/CreateFIOTest.png" target="_blank"><img class="image-with-border" src="/assets/images/CreateFIOTest.png"></a>
 <br><br>
 You can also select the “Storage Class” created earlier by you.
 <br><br>
