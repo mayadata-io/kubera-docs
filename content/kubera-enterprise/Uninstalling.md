@@ -8,7 +8,7 @@ versions:
   free-pro-team: '*'
 ---
 
-Follow the below mentioned steps to carry out graceful uninstallation of Kubera.
+Follow the steps below to carry out graceful uninstallation of Kubera.
 To get the release name, execute:
 <pre>
 helm ls --namespace &lt;namespace&gt;</pre>

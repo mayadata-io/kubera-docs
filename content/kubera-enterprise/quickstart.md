@@ -9,38 +9,38 @@ Kubera Enterprise is a software that helps with the running of Kubernetes as a d
 
 - Check pre-requisites such as helm and default storage classes in your Kubernetes cluster
 - Install Kubera using helm
-- Configure Kubera for secure https, onboard users
+- Configure Kubera for secure HTTPS, onboard users
 - Launch and configure Kubera modules - Propel and Chaos
 
 ### Prerequisites
 
-Before you install using Kubera helm chart, make sure the following pre-requisites are met.
+Before you install using the Kubera helm chart, make sure the following pre-requisites are met.
 
 - Kubernetes version 1.12.0 or above with RBAC enabled.
 - Availability of  2 vCPU and 4GB memory for all of the Kubera components.
-- Default storage class is configured on your Kuberenetes
+- Default storage class is configured on your Kubernetes
 ### Installing Helm v3
-To get started, ensure you have Helm v3 (v3.0.2 or above) installed. <u><a href="https://helm.sh/docs/intro/install/" target="_blank">Click here</a></u> to know the detailed steps for installation. 
+To get started, ensure you have Helm v3 (v3.0.2 or above) installed. <u><a href="https://helm.sh/docs/intro/install/" target="_blank">Click here</a></u> to learn the detailed steps for installation. 
 <br><br>
 
 ---
 
-*Note*: If you are installing Kubera in air gap environement, see the  [air gap quickstart](Air-Gapped-environments)
+*Note*: If you are installing Kubera in an Air-gap environement, see the  [air-gap quickstart](Air-Gapped-environments)
 
 ---
 
 
 
 ### Installing Kubera
-In order to install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
+To install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
 <pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
 
 In this document, we will be deploying the Kubera components in kubera namespace.
 To create a new namespace, execute:
 <pre>kubectl create ns kubera</pre>
 
-Next, execute the below mentioned command to install Kubera with default values, 
-or to install with domain and https "[Click here](/kubera-enterprise/installation-with-tls)".
+Next, execute the below-mentioned command to install Kubera with default values, 
+or to install with domain and HTTPS "[Click here](/kubera-enterprise/installation-with-tls)".
 
 <pre>helm install kubera kubera/kubera-enterprise -n kubera</pre>
 <br>
@@ -55,8 +55,8 @@ REVISION: 1
 TEST SUITE: None
 </pre>   
 <br><br>
-To install kubera with custom configuration, get the <b><u><a href="https://github.com/mayadata-io/kubera-charts/blob/master/kubera-enterprise/values.yaml" target="_blank">values.yaml</a></u></b> to your local repo, and edit it as per your requirment.	<br>
- Edit/add the required fields. Next, to install Kubera using the custom configuration, execute:
+To install Kubera with custom configuration, get the <b><u><a href="https://github.com/mayadata-io/kubera-charts/blob/master/kubera-enterprise/values.yaml" target="_blank">values.yaml</a></u></b> to your local repo, and edit it as per your requirement.	<br>
+ Edit the required fields. Next, install Kubera using the custom configuration:
 <pre>helm install kubera kubera/kubera-enterprise  -f values.yaml -n kubera</pre> 
 <br>
 Verify the status of the pods.:
@@ -74,14 +74,14 @@ kubera-mongodb-0                                   1/1     Running   0          
 <b>Note</b>: 
 
 <ul>
-<li>Installation process can take upto few minutes, as it requires allocation of resources, starting of services etc.</li></ul>
+<li>The installation process can take several minutes, as it requires provisioning resources and starting instances.</li></ul>
 <br>
 
 ### Accessing Kubera
 
 <br>
 
-Kubera runs a management end point through a service called `Kubera-ingress-nginx=controller`. Access Kubera from your browser using the **External_clusterIP:port** combination. 
+Kubera runs a management endpoint through a service called `Kubera-ingress-nginx=controller`. Access Kubera from your browser using the **External_clusterIP:port** combination. 
 
 
 To get the port number, execute:
@@ -123,7 +123,7 @@ Password- kubera
 
 
 
-After changing the default credentials, your Kubera Enterprise is ready for basic use. As next steps, see
+After changing the default credentials, your Kubera Enterprise is ready for basic use. For the next steps, see
 
 - Configuring [HTTPS for Kubera Enterprise](installation-with-tls)
 - Configuring [GitHub social authentication](ghauth)

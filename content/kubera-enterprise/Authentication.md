@@ -15,7 +15,7 @@ There are two ways for user authentication, Using local authentication or using 
 
 ### Local Authentication:
 
-This method of authentication allows the users to log in to Kubera portal using a local username and password.
+This method of authentication allows the users to log in to the-Kubera portal using a local username and password.
 <br><br>
 <a href="/assets/images/authentication1.png" target="_blank"><img class="image-with-border" src="/assets/images/authentication1.png"></a>
 <br><br>
@@ -26,10 +26,10 @@ Admin can enable GitHub authentication. To use this method of authentication, en
 * Client ID
 * Secret ID
 
-To acquire, in your GitHub account, do the following: 
+To acquire your ID from your GitHub account, do the following: 
 1. Choose a GitHub auth
 2. Select “All members of the organization” to grant access to all the members of the specified organization, or select “Open for entire Github” to grant access to Kubera Portal and its modules.
-3. 
+
 
 <br><br>
 <a href="/assets/images/authentication2.png" target="_blank"><img class="image-with-border" src="/assets/images/authentication2.png"></a>

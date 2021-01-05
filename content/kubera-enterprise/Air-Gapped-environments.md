@@ -1,5 +1,5 @@
 ---
-title: Setting up Kubera in Air Gap Environments
+title: Setting up Kubera in Air-Gap Environments
 shortTitle: Air Gap Quickstart
 #intro: 'You can use {% data variables.product.prodname_desktop %} to create and manage a Git repository without using the command line.'
 redirect_from:
@@ -16,8 +16,8 @@ The steps in this document walk you through the process of installing Kubera Ent
 
 
 
-*   An internal local image registry. We will push all the required images to this registry and pull images from here. We have used the Harbor registry , users can use any registry available.
-*   Images those should be available or pushed to local registry
+*   An internal local image registry. We will push all the required images to this registry and pull images from here. We have used the Harbor registry, users can use any registry available.
+*   Images those should be available or pushed to the local registry
     *   mayadataio/kubera-core-server:ci
     *   mayadataio/kubera-core-ui:ci
     *   mayadataio/kubera-auth:ci
@@ -29,7 +29,7 @@ The steps in this document walk you through the process of installing Kubera Ent
     *   mayadataio/kubera-litmus-server:ci
     *   mayadataio/kubera-propel-server:latest
     *   mayadataio/kubera-propel-webapp:latest
-*   A default storage class should be available on the target cluster. We you are going to use OpenEBS storageclass then you have to make sure that all the required images for OPenEBS are available on the local registry. To mark a storage class as default storage class use the following command.
+*   A default storage class should be available on the target cluster. If you are going to use the OpenEBS storage class then you have to make sure that all the required images for OpenEBS are available on the local registry. To mark a storage class as teh default storage class use the following command.
 
 ```kubectl patch storageclass <storage class name> -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'```
 
@@ -41,8 +41,8 @@ The steps in this document walk you through the process of installing Kubera Ent
 
 
 
-*   Download and copy the kubera-charts zip file to the target cluster. You can download the zip file to some device having internet connection and then copy it to the target cluster.
-*   To download the the zip file visit [https://github.com/mayadata-io/kubera-charts](https://github.com/mayadata-io/kubera-charts) and refer the screenshot below.
+*   Download and copy the kubera-charts zip file to the target cluster. You can download the zip file and then copy it to the target cluster.
+*   To download the zip file visit [https://github.com/mayadata-io/kubera-charts](https://github.com/mayadata-io/kubera-charts) and refer to the screenshot below.
 
     
 <br><br>
@@ -50,7 +50,7 @@ The steps in this document walk you through the process of installing Kubera Ent
 <br><br>
 
 *   Now extract the zip file.
-*   Now go to the kubera-enterprise using below commands
+*   Now go to the kubera-enterprise using the following command
 
 ```cd kubera-charts/kubera-enterprise```
 
@@ -106,8 +106,8 @@ ingress-nginx:
 </pre> 
 
 
-*   While retagging the images and pushing images to local registry the digest of the images will change. We have to update the the digest of the ingress-nginx-controller image in the sub chart for ingress-nginx-controller.
-*   To find the digest of the retagged image use below command:
+*   While retagging the images and pushing images to local registry, the digest of the images will change. We have to update the the digest of the ingress-nginx-controller image in the sub chart for ingress-nginx-controller.
+*   To find the digest of the retagged image use the command:
 
 ```docker inspect --format='{{range $sha := .RepoDigests}}{{$sha}}{{"\n"}}{{end}}' $img_name```
 
@@ -124,12 +124,12 @@ root@airgap-m:~# docker inspect --format='{{range $sha := .RepoDigests}}{{$sha}}
 
 
 
-*   Now we have to update the digest value for  ingress-nginx-controller. Follow the below steps.
+*   Now we have to update the digest value for  ingress-nginx-controller. Follow the steps below.
 
 ```cd charts/ingress-nginx```
 
 
-*   Now edit the values.yaml and update the digest value obtained from previous command.
+*   Next edit the values.yaml and update the digest value obtained from previous command.
 
 Example:
 
@@ -152,7 +152,7 @@ controller:
 
 
 
-*   Now we have to **install Kubera Enterprise**.Use the below commands to install. You can update the values of **release name>** and **namespace>** as per your requirement. User has to make sure the is present on the target cluster. If not then first create the namespace using below command.
+*   Now we have to **install Kubera Enterprise**. Use the following commands to install. You can update the values of **&lt;release name>** and **&lt;namespace>** to suit your environment. User has to make sure the namespace is present on the target cluster. If not then first create the namespace using the following command.
 
 ``` kubectl create ns <namespace name>```
 
@@ -169,7 +169,7 @@ namespace/kubera created
 
 
 
-*   Now **install Kubera Enterprise** using below command.
+*   Now **install Kubera Enterprise** using the following command.
 
 ```helm install <release-name> <namespace> .```
 
@@ -191,7 +191,7 @@ TEST SUITE: None
 
 
 
-*   Verify all the pods are running using below command.
+*   Verify all the pods are running using the following command.
 
 <pre style="color:#9966ff">
 root@airgap-m:~/kubera-charts/kubera-enterprise# kubectl get pods -n kubera
