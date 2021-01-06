@@ -16,7 +16,7 @@ versions:
 - Attached disks must be NVMe disks.
 - A total of 1024 HugePages. To know the detailed steps to enable HugePage support click <a href="https://mayastor.gitbook.io/introduction/quickstart/preparing-the-cluster#configure-mayastor-nodes-msns" target="_blank">here</a>. 
 <hr>
-To get started with Kubera Propel, login to <u><a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/kubera-enterprise/quickstart#accessing-kubera" target="_blank">Kubera</a></u> and click on <b>Start Kubera Propel</b>. This activates the Kubera Propel portal based on your subscription plan, or for new users starts a trial plan.
+To get started with Kubera Propel, login to <u><a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/kubera-enterprise/quickstart#accessing-kubera" target="_blank">Kubera</a></u> and click on <b>Start Kubera Propel</b>. This activates the Kubera Propel portal based on your subscription plan, or for new users begins a trial plan.
 <br><br>
 <a href="/assets/images/propel_main.png" target="_blank"><img class="image-with-border" src="/assets/images/propel_main.png"></a>
 <br><br> 
@@ -35,7 +35,7 @@ A new project will be created, for which you will be the administrator. Enter th
 <a href="/assets/images/propel1.png" target="_blank"><img class="image-with-border" src="/assets/images/propel1.png"></a>
 <br><br>
 
-You will now be redirected to Kubera Propel home screen.
+You will now be redirected to the Kubera Propel home screen.
 <br><br>
 
 
@@ -43,5 +43,8 @@ You will now be redirected to Kubera Propel home screen.
 <a href="/assets/images/PropelLandingPage.png" target="_blank"><img class="image-with-border" src="/assets/images/PropelLandingPage.png"></a>
 <br><br>
 
-You are all set to use Kubera Propel. Move to the next section to Configure storage on this Kubernetes cluster.
+You are all set to use Kubera Propel. For the next steps, see
+<ul>
+<li><a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel">Configure Storage Nodes</a></li>
+</ul>
 
