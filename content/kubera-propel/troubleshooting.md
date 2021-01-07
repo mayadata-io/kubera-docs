@@ -8,7 +8,7 @@ versions:
 ---
 <ul>
 <li>
-Make sure that the disks attached to the nodes are nvme disks only.
+Make sure that the disks attached to the nodes are NVMe disks only.
 You need to check the disks on each nodes connected to your cluster. To check the disks, execute:
 <pre>
 lsblk
