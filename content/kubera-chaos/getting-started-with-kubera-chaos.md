@@ -27,18 +27,18 @@ A new project will be created, for which you will be the administrator. Enter th
 <a href="/assets/images/developer/Getting-started/KuberaAdminPopUp.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/Getting-started/KuberaAdminPopUp.png" width="800"></a>
 <br>
 <br>
-On successful creation of the project you will be redirected back to Kubera,  where Kubera Chaos will be in the configured state. To access Kubera Chaos portal click on  the <b>Kubera Chaos</b> card.
+On successful creation of the project you will be redirected back to Kubera,  where Kubera Chaos will be in the configured state. To access the Kubera Chaos portal click on  the <b>Kubera Chaos</b> card.
 <br>
 <br>
 <center><a href="/assets/images/developer/Getting-started/KuberaCoreDashboard.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/Getting-started/KuberaCoreDashboard.png"></a></center>
 <br>
 <br>
-You will now be redirected to Kubera Chaos home screen. This page displays the basic user information such as your name, the projects that you are a part of and the updates.
+You will now be redirected to the Kubera Chaos home screen. This page displays the basic user information such as your name, the projects that you are a part of and the updates.
 <br>
 <br><center><a href="/assets/images/developer/Getting-started/KuberaChaosLandingScreen.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/Getting-started/KuberaChaosLandingScreen.png"></a></center>
 <br>
 <br>
-Once there are active chaos tests running, the home screen gets populated with portal analytics, which includes no. of workloads, average resiliency score, recent activities etc. This will help you get the overall idea of the  agents connected to the portal at a glance.
+Once active chaos tests are running, the home screen gets populated with portal analytics, which includes no. of workloads, average resiliency score, recent activities, etc. This will help you get the overall idea of the  agents connected to the portal at a glance.
 <br>
 <br><center><a href="/assets/images/developer/Getting-started/ChaosWorkflowDepoyed.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/Getting-started/ChaosWorkflowDepoyed.png"></a></center>
 <br>
@@ -65,7 +65,7 @@ Each user can have one of the 3 user roles  Owner, Viewer or Editor for a projec
 
 <i>
 <b>NOTE:</b>
-Settings page will not be visible to the user if he/she is browsing someone else’s project. The user can view the settings page if the user is the project owner.
+The settings page will not be visible to the user if he/she is browsing someone else’s project. The user can only view the settings page if the user is the project owner.
 </i>
 <br>
 <br><center><a href="/assets/images/developer/Getting-started/Settings1.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/Getting-started/Settings1.png"></a></center>
@@ -76,7 +76,7 @@ You can filter the table based on the roles of the members.
 <br><center><a href="/assets/images/developer/Getting-started/Settings2.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/Getting-started/Settings2.png"></a></center>
 <br>
 <br>
-To invite a new member to your project, click on <b>Invite new member<b> this opens a pop up, mention the email address of the member and assign its role. Once the invitation has been sent the invitee will receive a notification under their <b>Manage Invitations</b> section. 
+To invite a new member to your project, click on <b>Invite new member<b> this opens a pop-up, mention the email address of the member and assign its role. Once the invitation has been sent the invitee will receive a notification under their <b>Manage Invitations</b> section. 
 
 To view the list of pending invitations click on <b>Invitations</b>.
 This will list all the pending invites(sent or received).  
