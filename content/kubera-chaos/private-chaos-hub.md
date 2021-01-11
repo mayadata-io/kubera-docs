@@ -25,9 +25,9 @@ If the repository is private, enter the access token or SSH key along with Githu
 <br><center><a href="/assets/images/developer/MyHub/ConnectNewChaosHubPrivate.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/MyHub/ConnectNewChaosHubPrivate.png"></a></center>
 <br>
 <br>
-Click on <b>Submit Now</b>, Kubera Chaos Portal will now be able to fetch the experiments under the Hub from the linked github repository and display them on the <b>My Hubs</b> page.	
+Click on <b>Submit Now</b>, Kubera Chaos Portal will now be able to fetch the experiments under the Hub from the linked GitHub repository and display them on the <b>My Hub</b> page.	
 <br>
 <br><center><a href="/assets/images/developer/MyHub/ExpAdded.png" target="_blank"><img class="image-with-border" src="/assets/images/developer/MyHub/ExpAdded.png"></a></center>
 <br>
 <br>
-You are all set to use these experiments to customise your workflows.
+You are all set to use these experiments to customize your workflows.

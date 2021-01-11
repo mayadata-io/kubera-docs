@@ -12,4 +12,7 @@ script:
   fi
 - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then 
    docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" && docker build -t $REPO:$COMMIT . && docker push $REPO; 
+   git checkout staging && git rebase master;
+   git push https://${git_user}:${git_pass}@github.com/mayadata-io/kubera-docs.git staging;
   fi
+
