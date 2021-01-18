@@ -18,17 +18,17 @@ The steps in this document walk you through the process of installing Kubera Ent
 
 *   An internal local image registry. We will push all the required images to this registry and pull images from here. We have used the Harbor registry, users can use any registry available.
 *   Following images should be available or pushed to the local registry
-    *   mayadataio/kubera-core-server:ci
-    *   mayadataio/kubera-core-ui:ci
-    *   mayadataio/kubera-auth:ci
+    *   mayadataio/kubera-core-server:TechPreview-3
+    *   mayadataio/kubera-core-ui:TechPreview-3
+    *   mayadataio/kubera-auth:TechPreview-3
     *   bitnami/mongodb:4.4.1-debian-10-r13
     *   k8s.gcr.io/ingress-nginx/controller:v0.40.2
     *   jettech/kube-webhook-certgen:v1.3.0
     *   k8s.gcr.io/defaultbackend-amd64
-    *   mayadataio/kubera-litmus-webui:ci
-    *   mayadataio/kubera-litmus-server:ci
-    *   mayadataio/kubera-propel-server:latest
-    *   mayadataio/kubera-propel-webapp:latest
+    *   mayadataio/kubera-litmus-webui:TechPreview-3
+    *   mayadataio/kubera-litmus-server:TechPreview-3
+    *   mayadataio/kubera-propel-server:TechPreview-3
+    *   mayadataio/kubera-propel-webapp:TechPreview-3
 *   A default storage class should be available on the target cluster. If you are going to use the OpenEBS storage class, then you have to make sure that all the required images for OpenEBS are available on the local registry. To mark a storage class as the default storage class use the following command.
 
 ```kubectl patch storageclass <storage class name> -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'```
