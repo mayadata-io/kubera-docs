@@ -31,16 +31,62 @@ To get started, ensure you have Helm v3 (v3.0.2 or above) installed. <u><a href=
 
 
 
-### Installing Kubera
-To install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
-<pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
+Installing Kubera requires a storage class that can be used for volume provisioning. By default the <code>storageClassName</code> is set to <code>" "</code> which disables dynamic provisioning and utilises default storage class. To use a different storage class(needed in OnPrem setups) follow the below mentioned steps:
+<br><br>
+<b>Create a storage class</b>
+<br><br>
+A storage class, named <code>local-storage</code> needs to be created. Copy the given YAML and update <code>spec.nodeAffinity.required.nodeSelectorTerms.matchExpressions.values</code> (highlighted in red) with the node name.
+<pre>
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-kubera-mongodb
+spec:
+  capacity:
+    storage: 8Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: local-storage
+  claimRef:
+    name: datadir-kubera-mongodb-0
+    namespace: kubera
+  local:
+    path: /var
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - <font color="red">worker-0</font>
+</pre>   
+Next, patch the storage class with the following command:
+<pre>
+kubectl patch storageclass local-storage -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+</pre>
+<hr>
 
-In this document, we will be deploying the Kubera components in kubera namespace.
+### Installing Kubera
+<ul>
+<li>To install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
+<pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
+</li>
+<li>In this document, we will be deploying the Kubera components in kubera namespace.
 To create a new namespace, execute:
 <pre>kubectl create ns kubera</pre>
-
-Next, execute the below-mentioned command to install Kubera with default values, 
-or to install with domain and HTTPS "[Click here](/kubera-enterprise/installation-with-tls)".
+</li>
+<li>Next, execute the below-mentioned command to install Kubera with default values, 
+or to install with domain and HTTPS <a href="" target="_blank">Click here(/kubera-enterprise/installation-with-tls)</a>.
 
 <pre>helm install kubera kubera/kubera-enterprise -n kubera</pre>
 <br>
@@ -54,11 +100,14 @@ STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 </pre>   
+<center><b>OR</b></center>
 <br><br>
 To install Kubera with custom configuration, get the <b><u><a href="https://github.com/mayadata-io/kubera-charts/blob/master/kubera-enterprise/values.yaml" target="_blank">values.yaml</a></u></b> to your local repo, and edit it as per your requirement.	<br>
  Edit the required fields. Next, install Kubera using the custom configuration:
 <pre>helm install kubera kubera/kubera-enterprise  -f values.yaml -n kubera</pre> 
+</li>
 <br>
+<li>
 Verify the status of the pods.:
 <pre>
 kubectl get pods -n kubera
@@ -71,11 +120,14 @@ kubera-core-ui-86b5d4fbc6-tbb62                    1/1     Running   0          
 kubera-ingress-nginx-controller-5969799668-s74bn   1/1     Running   0          24m
 kubera-mongodb-0                                   1/1     Running   0          24m
 </pre>
-<b>Note</b>: 
-
-<ul>
-<li>The installation process can take several minutes, as it requires provisioning resources and starting instances.</li></ul>
 <br>
+<blockquote>
+<b>Note</b>: 
+The installation process can take several minutes, as it requires provisioning resources and starting instances.
+</blockquote>
+<br>
+</li>       
+</ul>
 
 ### Accessing Kubera
 
