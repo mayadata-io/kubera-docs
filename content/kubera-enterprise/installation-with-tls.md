@@ -9,7 +9,7 @@ versions:
 If you want to run Kubera with HTTPS which requires TLS certificates follow this doc to install and Kubera Enterprise. 
 
 ### Installing cert manager
-To get started, ensure you have a cert manager installed. Click here to know the detailed steps for installation.
+To get started, ensure you have a cert manager installed. Click <a href="https://cert-manager.io/docs/installation/" target="_blank">here</a> to know the detailed steps for installation.
 ### Creating issuer 
  Create an issuer using the below YAML. Copy the below YAML in a file say, issuer.yaml, and update the email address with the email you want to use for the issuer.
 <pre style="color:#9966ff">

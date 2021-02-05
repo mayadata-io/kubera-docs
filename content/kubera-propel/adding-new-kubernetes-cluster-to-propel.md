@@ -39,7 +39,7 @@ Next, extract the .gz file.
 To verify the setup, execute:
 <pre>./kuberactl version</pre>
 Sample Output:
-<pre>Kuberactl version:  v0.2.0</pre>
+<pre>Kuberactl version:  v0.4.0</pre>
 - <b>Registering an agent</b> To register a new propel agent, execute
 <pre>./kuberactl propel agent register</pre>
  Next, you need to enter Kubera Core details to Login to your Kubera account. Fields to be filled in:
@@ -56,7 +56,7 @@ Fields to filled in:
   - <b>Agent Description</b>: Fill in details about the agent.
   - <b>Platform Name</b>: Enter the platform name on which this agent is hosted. Example, AWS, GCP, Rancher etc.
   - <b>Enter the namespace</b>: You can either enter an existing namespace or enter a new namespace. In cases where the namespace does not exist, Kubera creates it for you.
- <a href="/assets/images/AgentDetails.png" target="_blank"><img class="image-with-border" src="/assets/images/AgentDetails.png"></a>
+ <a href="/assets/images/AgentDetailsPropel.png" target="_blank"><img class="image-with-border" src="/assets/images/AgentDetailsPropel.png"></a>
 Once, all these steps are implemented you will be able to see a summary of all the entered fields.
 After verification of these details you can proceed with registration of the agent by entering Y. The process of registration might take upto few seconds.
 <a href="/assets/images/ClusterConnected.png" target="_blank"><img class="image-with-border" src="/assets/images/ClusterConnected.png"></a>
