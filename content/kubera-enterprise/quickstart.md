@@ -94,7 +94,7 @@ Sample Output:
 <br>
 <pre style="color:#9966ff">
 NAME: kubera
-LAST DEPLOYED: Sun Dec 13 20:50:20 2020
+LAST DEPLOYED: Fri Feb  5 15:45:31 2021
 NAMESPACE: kubera
 STATUS: deployed
 REVISION: 1
@@ -115,10 +115,13 @@ kubectl get pods -n kubera
 Sample Output:
 <pre style="color:#9966ff">
 NAME                                               READY   STATUS    RESTARTS   AGE
-kubera-core-server-55d5bcd6d5-gqg7b                2/2     Running   3          24m
-kubera-core-ui-86b5d4fbc6-tbb62                    1/1     Running   0          24m
-kubera-ingress-nginx-controller-5969799668-s74bn   1/1     Running   0          24m
-kubera-mongodb-0                                   1/1     Running   0          24m
+agent-gateway-server-7f846678f5-4md8p              1/1     Running   0          7m40s
+agent-gateway-server-7f846678f5-56hsm              1/1     Running   0          7m40s
+agent-gateway-server-7f846678f5-pgxs9              1/1     Running   0          7m40s
+kubera-core-server-7c76dfff4c-jwjlj                2/2     Running   5          7m40s
+kubera-core-ui-5bf7596869-nr87p                    1/1     Running   0          7m40s
+kubera-ingress-nginx-controller-5969799668-hst2x   1/1     Running   0          7m40s
+kubera-mongodb-0                                   1/1     Running   0          7m40s
 </pre>
 <br>
 <blockquote>
@@ -147,12 +150,12 @@ kubectl get svc -n kubera
 
 <pre style="color:#9966ff">
 NAME                                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
-kubera-core-server                          ClusterIP   10.100.87.127    none         9002/TCP,9003/TCP            13h
-kubera-core-ui                              ClusterIP   10.100.206.16    none         9091/TCP                     13h
-<b>kubera-ingress-nginx-controller             NodePort    10.100.31.67     none         80:30080/TCP,443:30443/TCP   13h</b>
-kubera-ingress-nginx-controller-admission   ClusterIP   10.100.83.160    none         443/TCP                      13h
-kubera-mongodb                              ClusterIP   10.100.127.128   none         27017/TCP                    13h
-kubernetes                                  ClusterIP   10.100.0.1       none         443/TCP                      2d13h
+agent-gateway-server                        ClusterIP   10.100.229.127   <none>        8080/TCP,8081/TCP            8m27s
+kubera-core-server                          ClusterIP   10.100.212.39    <none>        9002/TCP,9003/TCP            8m27s
+kubera-core-ui                              ClusterIP   10.100.141.248   <none>        9091/TCP                     8m27s
+kubera-ingress-nginx-controller             NodePort    10.100.199.21    <none>        80:30080/TCP,443:30443/TCP   8m27s
+kubera-ingress-nginx-controller-admission   ClusterIP   10.100.213.88    <none>        443/TCP                      8m27s
+kubera-mongodb                              ClusterIP   10.100.110.143   <none>        27017/TCP                    8m27s
 </pre>
 The IP address and port should be taken from the service <b>kubera-ingress-nginx-controller</b> .
 <br> <br>
@@ -170,7 +173,7 @@ Password- kubera
 
 
 <br>
-<a href="/assets/images/kubera-login.png" target="_blank"><img class="image-with-border" src="/assets/images/kubera-login.png"></a>
+<a href="/assets/images/Login ToKubera.png" target="_blank"><img class="image-with-border" src="/assets/images/Login ToKubera.png"></a>
 <br>
 
 
