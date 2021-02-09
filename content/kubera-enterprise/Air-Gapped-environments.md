@@ -7,7 +7,7 @@ redirect_from:
 versions:
   free-pro-team: '*'
 ---
-Here users will find the instructions on deploying Kubera Enterprise in a multi-node air-gapped or offline target machine that has no external Internet connectivity.
+Here users will find the instructions for deploying Kubera Enterprise in a multi-node air-gapped or offline target machine that has no external Internet connectivity.
 
 The steps in this document walk you through the process of installing Kubera Enterprise and its required images into an air-gapped environment.
 
@@ -17,27 +17,27 @@ The steps in this document walk you through the process of installing Kubera Ent
 
 
 *   An internal local image registry. We will push all the required images to this registry and pull images from here. We have used the Harbor registry, users can use any registry available.
-*   Images those should be available or pushed to the local registry
-    *   mayadataio/kubera-core-server:ci
-    *   mayadataio/kubera-core-ui:ci
-    *   mayadataio/kubera-auth:ci
+*   Following images should be available or pushed to the local registry
+    *   mayadataio/kubera-core-server:TechPreview-3
+    *   mayadataio/kubera-core-ui:TechPreview-3
+    *   mayadataio/kubera-auth:TechPreview-3
     *   bitnami/mongodb:4.4.1-debian-10-r13
     *   k8s.gcr.io/ingress-nginx/controller:v0.40.2
     *   jettech/kube-webhook-certgen:v1.3.0
     *   k8s.gcr.io/defaultbackend-amd64
-    *   mayadataio/kubera-litmus-webui:ci
-    *   mayadataio/kubera-litmus-server:ci
-    *   mayadataio/kubera-propel-server:latest
-    *   mayadataio/kubera-propel-webapp:latest
-*   A default storage class should be available on the target cluster. If you are going to use the OpenEBS storage class then you have to make sure that all the required images for OpenEBS are available on the local registry. To mark a storage class as teh default storage class use the following command.
+    *   mayadataio/kubera-litmus-webui:TechPreview-3
+    *   mayadataio/kubera-litmus-server:TechPreview-3
+    *   mayadataio/kubera-propel-server:TechPreview-3
+    *   mayadataio/kubera-propel-webapp:TechPreview-3
+*   A default storage class should be available on the target cluster. If you are going to use the OpenEBS storage class, then you have to make sure that all the required images for OpenEBS are available on the local registry. To mark a storage class as the default storage class use the following command.
 
 ```kubectl patch storageclass <storage class name> -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'```
 
 
-*   Helm should be installed on the target cluster. Here we are using helm version 3.
+*   Helm v3 (v3.0.2 or above) should be installed on the target cluster.
 
 
-# Steps To Install Kubera Enterprise:
+# Steps to Install Kubera Enterprise:
 
 
 
@@ -45,6 +45,7 @@ The steps in this document walk you through the process of installing Kubera Ent
 *   To download the zip file visit [https://github.com/mayadata-io/kubera-charts](https://github.com/mayadata-io/kubera-charts) and refer to the screenshot below.
 
     
+
 <br><br>
 <a href="/assets/images/Airgap1.png" target="_blank"><img class="image-with-border" src="/assets/images/Airgap1.png"></a>
 <br><br>
@@ -55,7 +56,7 @@ The steps in this document walk you through the process of installing Kubera Ent
 ```cd kubera-charts/kubera-enterprise```
 
 
-*   Now edit the values.yaml and update your docker registry values with your local registry values. An example of the updated values the yaml:
+*   Now edit the `values.yaml` and update your docker registry values with your local registry values. An example of the updated values the yaml:
 
 <pre style="color:#9966ff">
 platform: Default
@@ -106,6 +107,7 @@ ingress-nginx:
 </pre> 
 
 
+
 *   While retagging the images and pushing images to local registry, the digest of the images will change. We have to update the the digest of the ingress-nginx-controller image in the sub chart for ingress-nginx-controller.
 *   To find the digest of the retagged image use the command:
 
@@ -129,7 +131,7 @@ root@airgap-m:~# docker inspect --format='{{range $sha := .RepoDigests}}{{$sha}}
 ```cd charts/ingress-nginx```
 
 
-*   Next edit the values.yaml and update the digest value obtained from previous command.
+*   Next edit the `values.yaml` and update the digest value obtained from previous command.
 
 Example:
 
@@ -171,7 +173,7 @@ namespace/kubera created
 
 *   Now **install Kubera Enterprise** using the following command.
 
-```helm install <release-name> <namespace> .```
+```helm install <release-name> -n <namespace> .```
 
 
 

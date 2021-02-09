@@ -31,16 +31,62 @@ To get started, ensure you have Helm v3 (v3.0.2 or above) installed. <u><a href=
 
 
 
-### Installing Kubera
-To install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
-<pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
+Installing Kubera requires a storage class that can be used for volume provisioning. By default the <code>storageClassName</code> is set to <code>" "</code> which disables dynamic provisioning and utilises default storage class. To use a different storage class(needed in OnPrem setups) follow the below mentioned steps:
+<br><br>
+<b>Create a storage class</b>
+<br><br>
+A storage class, named <code>local-storage</code> needs to be created. Copy the given YAML and update <code>spec.nodeAffinity.required.nodeSelectorTerms.matchExpressions.values</code> (highlighted in red) with the node name.
+<pre>
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-kubera-mongodb
+spec:
+  capacity:
+    storage: 8Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: local-storage
+  claimRef:
+    name: datadir-kubera-mongodb-0
+    namespace: kubera
+  local:
+    path: /var
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - <font color="red">worker-0</font>
+</pre>   
+Next, patch the storage class with the following command:
+<pre>
+kubectl patch storageclass local-storage -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+</pre>
+<hr>
 
-In this document, we will be deploying the Kubera components in kubera namespace.
+### Installing Kubera
+<ul>
+<li>To install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
+<pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
+</li>
+<li>In this document, we will be deploying the Kubera components in kubera namespace.
 To create a new namespace, execute:
 <pre>kubectl create ns kubera</pre>
-
-Next, execute the below-mentioned command to install Kubera with default values, 
-or to install with domain and HTTPS "[Click here](/kubera-enterprise/installation-with-tls)".
+</li>
+<li>Next, execute the below-mentioned command to install Kubera with default values, 
+or to install with domain and HTTPS <a href="" target="_blank">Click here(/kubera-enterprise/installation-with-tls)</a>.
 
 <pre>helm install kubera kubera/kubera-enterprise -n kubera</pre>
 <br>
@@ -48,17 +94,20 @@ Sample Output:
 <br>
 <pre style="color:#9966ff">
 NAME: kubera
-LAST DEPLOYED: Sun Dec 13 20:50:20 2020
+LAST DEPLOYED: Fri Feb  5 15:45:31 2021
 NAMESPACE: kubera
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 </pre>   
+<center><b>OR</b></center>
 <br><br>
 To install Kubera with custom configuration, get the <b><u><a href="https://github.com/mayadata-io/kubera-charts/blob/master/kubera-enterprise/values.yaml" target="_blank">values.yaml</a></u></b> to your local repo, and edit it as per your requirement.	<br>
  Edit the required fields. Next, install Kubera using the custom configuration:
 <pre>helm install kubera kubera/kubera-enterprise  -f values.yaml -n kubera</pre> 
+</li>
 <br>
+<li>
 Verify the status of the pods.:
 <pre>
 kubectl get pods -n kubera
@@ -66,16 +115,22 @@ kubectl get pods -n kubera
 Sample Output:
 <pre style="color:#9966ff">
 NAME                                               READY   STATUS    RESTARTS   AGE
-kubera-core-server-55d5bcd6d5-gqg7b                2/2     Running   3          24m
-kubera-core-ui-86b5d4fbc6-tbb62                    1/1     Running   0          24m
-kubera-ingress-nginx-controller-5969799668-s74bn   1/1     Running   0          24m
-kubera-mongodb-0                                   1/1     Running   0          24m
+agent-gateway-server-7f846678f5-4md8p              1/1     Running   0          7m40s
+agent-gateway-server-7f846678f5-56hsm              1/1     Running   0          7m40s
+agent-gateway-server-7f846678f5-pgxs9              1/1     Running   0          7m40s
+kubera-core-server-7c76dfff4c-jwjlj                2/2     Running   5          7m40s
+kubera-core-ui-5bf7596869-nr87p                    1/1     Running   0          7m40s
+kubera-ingress-nginx-controller-5969799668-hst2x   1/1     Running   0          7m40s
+kubera-mongodb-0                                   1/1     Running   0          7m40s
 </pre>
-<b>Note</b>: 
-
-<ul>
-<li>The installation process can take several minutes, as it requires provisioning resources and starting instances.</li></ul>
 <br>
+<blockquote>
+<b>Note</b>: 
+The installation process can take several minutes, as it requires provisioning resources and starting instances.
+</blockquote>
+<br>
+</li>       
+</ul>
 
 ### Accessing Kubera
 
@@ -95,12 +150,12 @@ kubectl get svc -n kubera
 
 <pre style="color:#9966ff">
 NAME                                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
-kubera-core-server                          ClusterIP   10.100.87.127    none         9002/TCP,9003/TCP            13h
-kubera-core-ui                              ClusterIP   10.100.206.16    none         9091/TCP                     13h
-<b>kubera-ingress-nginx-controller             NodePort    10.100.31.67     none         80:30080/TCP,443:30443/TCP   13h</b>
-kubera-ingress-nginx-controller-admission   ClusterIP   10.100.83.160    none         443/TCP                      13h
-kubera-mongodb                              ClusterIP   10.100.127.128   none         27017/TCP                    13h
-kubernetes                                  ClusterIP   10.100.0.1       none         443/TCP                      2d13h
+agent-gateway-server                        ClusterIP   10.100.229.127   <none>        8080/TCP,8081/TCP            8m27s
+kubera-core-server                          ClusterIP   10.100.212.39    <none>        9002/TCP,9003/TCP            8m27s
+kubera-core-ui                              ClusterIP   10.100.141.248   <none>        9091/TCP                     8m27s
+kubera-ingress-nginx-controller             NodePort    10.100.199.21    <none>        80:30080/TCP,443:30443/TCP   8m27s
+kubera-ingress-nginx-controller-admission   ClusterIP   10.100.213.88    <none>        443/TCP                      8m27s
+kubera-mongodb                              ClusterIP   10.100.110.143   <none>        27017/TCP                    8m27s
 </pre>
 The IP address and port should be taken from the service <b>kubera-ingress-nginx-controller</b> .
 <br> <br>
@@ -118,7 +173,7 @@ Password- kubera
 
 
 <br>
-<a href="/assets/images/kubera-login.png" target="_blank"><img class="image-with-border" src="/assets/images/kubera-login.png"></a>
+<a href="/assets/images/Login ToKubera.png" target="_blank"><img class="image-with-border" src="/assets/images/Login ToKubera.png"></a>
 <br>
 
 
