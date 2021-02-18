@@ -29,7 +29,7 @@ For configuring storage nodes, click on Configure Storage on Nodes and the Nodes
 
 * After the selection of storage nodes, you can similarly configure the application nodes.
 
-* Select the nodes with ISCSI client or you may want to select a new application node that doesn’t have iscsi client installed, Kubera propel gives you the ability to install iscsi clinet from Propel UI itseld.
+* Select the nodes with NVMe installed.
 
 * Click on <b>Select All</b>, if you want to configure all the available nodes as Storage Nodes.
 
