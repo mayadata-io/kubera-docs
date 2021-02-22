@@ -13,6 +13,7 @@ versions:
 {% topic_link_in_list /getting-started-with-kubera-propel %}
 {% topic_link_in_list /adding-new-kubernetes-cluster-to-propel %}
 {% topic_link_in_list /configure-storage-nodes %}
+{% topic_link_in_list /deploying-a-sample-application %}
 {% topic_link_in_list /benchmarking-your-storage %}
 {% topic_link_in_list /uninstalling %}
 {% topic_link_in_list /troubleshooting %}
