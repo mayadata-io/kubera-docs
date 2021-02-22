@@ -46,6 +46,7 @@ You will now be redirected to the Kubera Propel home screen.
 You are all set to use Kubera Propel. You can either configure storage on this Kubernetes cluster or <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel" target="_blank">deploy a new agent</a>.<br>
 For the next steps, see
 <ul>
-<li><a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel">Configure Storage Nodes</a></li>
+<li><a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel">Configure Nodes, Pools and Storage Class</a></li>
+<li><a href="http://localhost:4000/en/free-pro-team@latest/kubera-propel/configure-storage-nodes#a-sample-mysql-application-utilising-the-above-created-storage-class" target="_blank">Deploying a sample application using the above Storage Class</a></li>
 </ul>
 

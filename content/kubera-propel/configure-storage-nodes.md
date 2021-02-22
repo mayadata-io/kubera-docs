@@ -1,5 +1,5 @@
 ---
-title: Configure Storage Nodes
+title: Storage Configuration
 shortTitle: Storage Configuration
 #intro: '{% data variables.product.prodname_ghe_server %} supports the same powerful API available on {% data variables.product.prodname_dotcom_the_website %} as well as its own set of API endpoints.'
 redirect_from:
@@ -7,6 +7,8 @@ redirect_from:
 versions:
   free-pro-team: '*'
 ---
+### Configuring Nodes, Pools and Storage Classes
+
 To configure your storage on this Kubernetes cluster, click on <b>Configure Storage on this Kubernetes cluster</b> card present on the right side of your screen.
 <br><br>
 <a href="/assets/images/propel6_new.png" target="_blank"><img class="image-with-border" src="/assets/images/propel6_new.png"></a>
@@ -139,9 +141,7 @@ NAME                  PROVISIONER               RECLAIMPOLICY   VOLUMEBINDINGMOD
 gp2 (default)         kubernetes.io/aws-ebs     Delete          WaitForFirstConsumer   false                  63m
 mayastor-nvmf-209dg   io.openebs.csi-mayastor   Delete          Immediate              false                  6m13s
 </pre>
-
-This StorageClass can be used to provision applications by the user.
-
 <br><br>
 <a href="/assets/images/propel16.png" target="_blank"><img class="image-with-border" src="/assets/images/propel16.png"></a>
 <br><br>
+This Storage Class can be used to <a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/kubera-propel/deploying-a-sample-application" target="_blank">provision application(s)</a>.

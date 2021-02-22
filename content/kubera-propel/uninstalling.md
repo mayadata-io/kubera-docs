@@ -52,16 +52,6 @@ propel-agent-controller   1/1     7h32m
 To delete the above agent controller, execute:
 <pre>kubectl delete sts propel-agent-controller</pre>
 </li>
-<li>Delete recipe, if any in the <b>kubera</b> namespace.
-<pre>kubectl get rcp -n kubera</pre>
-Sample Output:
-<pre style="color:#9966ff">
-NAMESPACE   NAME                       AGE     TIMETAKEN   STATUS      REASON
-kubera      default-mayastor-install   7h30m   4.398s      Completed   
-</pre>
-To delete the recipe, execute:
-<pre>kubectl delete rcp default-mayastor-install -n kubera</pre>
-</li>
 <li>Once all the resources have been successfully deleted, you can now delete the <b>kubera</b> namespace.
 <pre>kubectl delete namespace kubera</pre></li>
 </ul>
@@ -102,6 +92,27 @@ nats   1/1     1            1           8h
 </pre>
 To delete the deployments, execute:
 <pre>kubectl delete deploy --all -n mayastor</pre>
+</li>
+<li>Delete recipe, if any in the <b>kubera</b> namespace.
+<pre>kubectl get rcp -n kubera</pre>
+Sample Output:
+<pre style="color:#9966ff">
+NAMESPACE   NAME                       AGE     TIMETAKEN   STATUS      REASON
+kubera      default-mayastor-install   7h30m   4.398s      Completed   
+</pre>
+To delete the recipe, execute:
+<pre>kubectl delete rcp default-mayastor-install -n kubera</pre>
+</li>
+<li>
+Next, you need to delete the config maps that were created. To list the config map, execute:
+<pre>kubectl get cm -n mayastor</pre>
+Sample Output:
+<pre style="color:#9966ff">
+NAMESPACE         NAME                                 DATA   AGE
+mayastor          kube-root-ca.crt                     1      8h
+</pre>
+To delete,
+<pre>kubectl delete cm kube-root-ca.crt -n mayastor</pre>
 </li>
 <li>Once all the resources have been successfully deleted, you can now delete the <b>mayastor</b> namespace.
 <pre>kubectl delete namespace mayastor</pre></li>
