@@ -77,6 +77,11 @@ kubectl patch storageclass local-storage -p '{"metadata": {"annotations":{"stora
 <hr>
 
 ### Installing Kubera
+<br>
+<blockquote>
+<b>NOTE:</b> Upgrades within TechPreview is <b>not</b> supported, as each version might have breaking changes. It is recommended to reinstall Kubera for upgrades.
+</blockquote>
+<br>
 <ul>
 <li>To install Kubera, you need to add the repository to your helm's configuration. To add the repository, execute:
 <pre>helm repo add kubera <a href="https://charts.mayadata.io/">https://charts.mayadata.io/</a></pre>
@@ -173,7 +178,7 @@ Password- kubera
 
 
 <br>
-<a href="/assets/images/Login ToKubera.png" target="_blank"><img class="image-with-border" src="/assets/images/Login ToKubera.png"></a>
+<a href="/assets/images/LoginToKubera.png" target="_blank"><img class="image-with-border" src="/assets/images/LoginToKubera.png"></a>
 <br>
 
 
