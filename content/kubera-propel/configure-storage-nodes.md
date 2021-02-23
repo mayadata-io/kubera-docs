@@ -23,6 +23,9 @@ To configure your storage on this Kubernetes cluster, click on <b>Configure Stor
 
 
 For configuring storage nodes, click on Configure Storage on Nodes and the Nodes will be auto-detected. Select all the Nodes and click on <b>Next</b>
+<blockquote>
+Each of these node details card display the state of the node. A node is identified as good/normal/bad based on available CPU, memory and HugePage configurations.
+</blockquote>
 <br><br>
 <a href="/assets/images/propel8.png" target="_blank"><img class="image-with-border" src="/assets/images/propel8.png"></a>
 <br><br>
