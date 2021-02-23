@@ -16,14 +16,14 @@ To perform the storage test:
 * Click on the <b> Run Test</b> for running the benchmarking. 
 
 
-<a href="/assets/images/propel14.png" target="_blank"><img class="image-with-border" src="/assets/images/propel14.png"></a>
+<a href="/assets/images/KuberaPropel/StorageWorkfowNew.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/StorageWorkfowNew.png"></a>
 
 Kubera Propel uses the Fio tester against the underlying PV for performing the storage benchmarking. This Fio test analysis will help you with detecting the “Average IOPS”, “Average Throughput and Latency”.
 
 Once you click on <b>Run Storage Test</b>, the next screen will let you create the test where you can add the “Test Name” as per your choice.
 
 <br><br>
-<a href="/assets/images/CreateFIOTest.png" target="_blank"><img class="image-with-border" src="/assets/images/CreateFIOTest.png"></a>
+<a href="/assets/images/KuberaPropel/RunTest.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/RunTest.png"></a>
 <br><br>
 You can also select the “Storage Class” which you created earlier.
 <br><br>
@@ -32,5 +32,7 @@ Finally click on <b>Run a performance test</b>
 Lastly, after the Fio test gets completed, it will share the results of “Average IOPS, Throughput and Average latency if any”. You can also click on “View Report” to get a detailed view of the FIO tests performed. Historical tests can also be viewed from the same screen and the specific test can be rerun or reviewed to identify the performance calculated by FIO for that test case with “Read  and Write IOPS”, “Read and Write latency”. Export of the results can be done by clicking on <b>Export to PDF</b>.
 
 
-<a href="/assets/images/propel18.png" target="_blank"><img class="image-with-border" src="/assets/images/propel18.png"></a>
+<a href="/assets/images/KuberaPropel/1.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/1.png"></a>
+<br><br>
+<a href="/assets/images/KuberaPropel/2.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/2.png"></a>
 <br><br>
