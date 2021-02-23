@@ -29,10 +29,10 @@ After installing Kubera Enterprise, you will need to obtain a non-expiring free 
 <br><br>
 - Login at  <a href="https://vendor.mayadata.io/login" target="_blank">vendor.mayadata.io</a>, using your GitHub credentials.
 - To generate a free subscription click on <b>Get your Free Subscription</b>
-<a href="/assets/images/enterprise/FreeSubscriptionVendor.png" target="_blank"><img class="image-with-border" src="/assets/images/enterprise/FreeSubscriptionVendor.png"></a>
+<a href="/assets/images/enterprise/FreeSubscription.png" target="_blank"><img class="image-with-border" src="/assets/images/enterprise/FreeSubscription.png"></a>
 <br><br>
-Next, click on <b>Get a new free Subscription</b> button on the top right corner then enter your Kubera ID.
-<a href="/assets/images/enterprise/KuberaID.png" target="_blank"><img class="image-with-border" src="/assets/images/enterprise/KuberaID.png"></a>
+Next, click on <b>Buy a new free Subscription</b> button on the top right corner, then enter your Kubera ID.
+<a href="/assets/images/enterprise/KuberaIDNew.png" target="_blank"><img class="image-with-border" src="/assets/images/enterprise/KuberaIDNew.png"></a>
 <br><br>
 - Click on <b>Download</b> to get subscription.
 - Go back to your Kubera Enterprise subcriptions page and upload the new subscription.
