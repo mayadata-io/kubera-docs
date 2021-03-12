@@ -19,6 +19,6 @@ script:
    git clone https://${git_user}:${git_pass}@github.com/mayadata-io/kubera-docs.git; 
    cd kubera-docs;
    git checkout staging && git rebase origin/master;
-   git push https://${git_user}:${git_pass}@github.com/mayadata-io/kubera-docs.git staging;
+   git push -f https://${git_user}:${git_pass}@github.com/mayadata-io/kubera-docs.git staging;
   fi
 
