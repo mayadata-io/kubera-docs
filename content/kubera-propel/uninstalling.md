@@ -64,12 +64,21 @@ For graceful uninstallation of Mayastor, you will first have to remove all the c
 <li>Next, delete the PVC(s) consuming Mayastor volumes. To get the list of PVCs, execute:
 <pre>kubectl get pvc -n &lt;namespace&gt;</pre> 
 To delete the PVCs, execute:
-<pre>kubectl delete pvc -n &lt;namespace&gt;</pre> </li>
+<pre>kubectl delete pvc -n &lt;namespace&gt;</pre>
+<blockquote>
+After deletion of PVCs ensure the corresponding PVs are also deleted.
+</blockquote> </li>
 <li>Once the applications and PVC(s) are deleted, delete existing Mayastor volumes, if any.
 To get the list of the volumes, execute:
-<pre>kubectl get msv</pre>
+<pre>kubectl get msv -n mayastor</pre>
+Sample Output:
+<pre style="color:#9966ff">
+NAME                                   NODE   SIZE         STATE     AGE
+c42ea0f7-cb29-4ac8-ad22-4110fc7fd1b9          5368709120   healthy   2d3h
+e9c13cc2-4e3f-4e51-a9dd-8c7307a3903e          5368709120   healthy   3d21h
+</pre>
 To delete,
-<pre>kubectl delete msv &lt;VolumeName&gt;</li>
+<pre>kubectl delete msv &lt;VolumeName&gt; -n mayastor</li>
 </ul>
 To remove Mayastor components from your setup, follow the below-mentioned steps.
 <ul>
@@ -85,6 +94,21 @@ msp-ibscs-2   ip-192-168-73-222.ap-southeast-1.compute.internal   online   8h
 To delete, execute:
 <pre>kubectl delete msp --all -n mayastor</pre></li>
 </li>
+<li>
+Delete all the Mayastor nodes present in the <b>mayastor</b> namespace.
+<pre>kubectl get msn -n mayastor</pre>
+Sample Output:
+<pre style="color:#9966ff">
+NAME                          STATE    AGE
+kuberanode1-virtual-machine   online   3d22h
+kuberanode2-virtual-machine   online   3d22h
+kuberanode3-virtual-machine   online   3d21h
+kuberanode4-virtual-machine   online   3d22h
+kuberanode5-virtual-machine   online   3d22h
+</pre>
+To delete, execute:
+<pre>kubectl delete msn --all -n mayastor</pre>
+</li>
 <li>Next, delete all the deployments and daemonsets.
 <pre>kubectl get ds -n mayastor</pre>
 Sample Output:
@@ -93,6 +117,8 @@ NAME           DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTO
 mayastor       3         3         3       3            3           kubernetes.io/arch=amd64,openebs.io/engine=mayastor,propel.kubera.mayadata.io/cluster-id=95d95dc2-f5da-4151-8c9f-5519175f346a,propel.kubera.mayadata.io/is-storage=true   8h
 mayastor-csi   3         3         3       3            3           kubernetes.io/arch=amd64,propel.kubera.mayadata.io/cluster-id=95d95dc2-f5da-4151-8c9f-5519175f346a,propel.kubera.mayadata.io/is-app=true                                  8h
 </pre>
+To delete, execute:
+<pre>kubectl delete ds --all -n mayastor</pre>
 <br>
 <pre>
 kubectl get deploy -n mayastor
@@ -121,4 +147,4 @@ To delete,
 <pre>kubectl delete namespace mayastor</pre></li>
 </ul>
 
-To delete the entire Kubera Enterprise setup, follow the steps mentioned under <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/Uninstalling" target="_blank">Uninstaling Kubera</a> section.
+To delete the entire Kubera Enterprise setup, follow the steps mentioned under [Uninstaling Kubera](/en/free-pro-team@latest/kubera-enterprise/Uninstalling)section.
