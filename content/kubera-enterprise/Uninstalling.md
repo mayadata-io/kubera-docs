@@ -29,7 +29,4 @@ Next, you need to cleanup the PVCs created during the process of Kubera installa
 To delete the PVCs, execute:
 <pre>kubectl delete pvc -n &lt;kubera_namepsace&gt;</pre>
 
-
-
-
-
+The above mentioned steps only clean up Kubera Enterprise resources. In case, the setup also contains Kubera Propel follow <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/uninstalling" target="_blank">Kubera Propel uninstallation</a> section.  

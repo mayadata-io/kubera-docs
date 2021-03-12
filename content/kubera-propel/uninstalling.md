@@ -10,7 +10,7 @@ versions:
 
 ## Disconnecting cluster
 
-To disconnect the cluster, click on <b>Manage clusters</b> under <b>Clusters</b> menu on the left sidebar. Select the cluster that needs to be disconnected and click on the red disconnect button next to it.
+To disconnect the cluster, click on <b>Manage clusters</b> under <b>Clusters</b> menu on the left sidebar. Cick on the red disconnect button next to the desired cluster.
  
 <a href="/assets/images/KuberaPropel/DisconnectCluster.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/DisconnectCluster.png"></a><br>
 
@@ -56,8 +56,21 @@ To delete the above agent controller, execute:
 <pre>kubectl delete namespace kubera</pre></li>
 </ul>
 
-###  Clean up of Mayastor components from the setup
+### Clean up of Mayastor components from the setup
 
+For graceful uninstallation of Mayastor, you will first have to remove all the components that utilise Mayastor resources and then delete Mayastor components.<br>
+<ul>
+<li>Ensure there are no applications running on top of Mayastor. </li>
+<li>Next, delete the PVC(s) consuming Mayastor volumes. To get the list of PVCs, execute:
+<pre>kubectl get pvc -n &lt;namespace&gt;</pre> 
+To delete the PVCs, execute:
+<pre>kubectl delete pvc -n &lt;namespace&gt;</pre> </li>
+<li>Once the applications and PVC(s) are deleted, delete existing Mayastor volumes, if any.
+To get the list of the volumes, execute:
+<pre>kubectl get msv</pre>
+To delete,
+<pre>kubectl delete msv &lt;VolumeName&gt;</li>
+</ul>
 To remove Mayastor components from your setup, follow the below-mentioned steps.
 <ul>
 <li>Delete all the Mayastor pools present in the <b>mayastor</b> namespace.
@@ -93,16 +106,6 @@ nats   1/1     1            1           8h
 To delete the deployments, execute:
 <pre>kubectl delete deploy --all -n mayastor</pre>
 </li>
-<li>Delete recipe, if any in the <b>kubera</b> namespace.
-<pre>kubectl get rcp -n kubera</pre>
-Sample Output:
-<pre style="color:#9966ff">
-NAMESPACE   NAME                       AGE     TIMETAKEN   STATUS      REASON
-kubera      default-mayastor-install   7h30m   4.398s      Completed   
-</pre>
-To delete the recipe, execute:
-<pre>kubectl delete rcp default-mayastor-install -n kubera</pre>
-</li>
 <li>
 Next, you need to delete the config maps that were created. To list the config map, execute:
 <pre>kubectl get cm -n mayastor</pre>
@@ -117,3 +120,5 @@ To delete,
 <li>Once all the resources have been successfully deleted, you can now delete the <b>mayastor</b> namespace.
 <pre>kubectl delete namespace mayastor</pre></li>
 </ul>
+
+To delete the entire Kubera Enterprise setup, follow the steps mentioned under <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/Uninstalling" target="_blank">Uninstaling Kubera</a> section.

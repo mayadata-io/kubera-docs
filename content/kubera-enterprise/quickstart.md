@@ -91,7 +91,7 @@ To create a new namespace, execute:
 <pre>kubectl create ns kubera</pre>
 </li>
 <li>Next, execute the below-mentioned command to install Kubera with default values, 
-or to install with domain and HTTPS <a href="" target="_blank">Click here(/kubera-enterprise/installation-with-tls)</a>.
+or to install with domain and HTTPS <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/installation-with-tls" target="_blank">Click here</a>.
 
 <pre>helm install kubera kubera/kubera-enterprise -n kubera</pre>
 <br>
