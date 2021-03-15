@@ -15,5 +15,6 @@ versions:
 {% topic_link_in_list /configure-storage-nodes %}
 {% topic_link_in_list /deploying-a-sample-application %}
 {% topic_link_in_list /benchmarking-your-storage %}
+{% topic_link_in_list /managing-teams %}
 {% topic_link_in_list /uninstalling %}
 {% topic_link_in_list /troubleshooting %}
