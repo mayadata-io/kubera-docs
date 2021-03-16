@@ -27,32 +27,29 @@ For configuring storage nodes, click on Configure Storage on Nodes and the Nodes
 Each of these node details card display the state of the node. A node is identified as good/normal/bad based on available CPU, memory and HugePage configurations.
 </blockquote>
 <br><br>
-<a href="/assets/images/propel8.png" target="_blank"><img class="image-with-border" src="/assets/images/propel8.png"></a>
+<a href="/assets/images/KuberaPropel/SelectStorageNodes.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/SelectStorageNodes.png"></a>
 <br><br>
 
 
 
-* After the selection of storage nodes, you can similarly configure the application nodes.
+* After the selection of storage nodes, you can configure the resources. Set the limits for Mayastor daemonset. Configure the CPU, memory and Huge Pages as per requirement. To dedicate the CPU only for Mayastor, check mark the box under CPU configuration card as shown in the figure.
+<br><br>
+<a href="/assets/images/KuberaPropel/ConfigureResources.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/ConfigureResources.png"></a>
+<br><br>
+* Next, configure the application nodes.
 
 * Select the nodes with NVMe installed.
 
-* Click on <b>Select All</b>, if you want to configure all the available nodes as Storage Nodes.
-
-The next page will list all the selected storage nodes with their resource limits: "HugePages, CPU, and Memory". Click on <b>Next</b>
+* Click on <b>Select All</b>, if you want to configure all the available nodes as Application Nodes.
 <br><br>
-<a href="/assets/images/propel9.png" target="_blank"><img class="image-with-border" src="/assets/images/propel9.png"></a>
+<a href="/assets/images/KuberaPropel/SelectApplicationNodes.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/SelectApplicationNodes.png"></a>
 <br><br>
-
-Select Application Nodes from the list of nodes displayed on the screen and click on <b>Next</b>.
-<br><br>
-<a href="/assets/images/propel10.png" target="_blank"><img class="image-with-border" src="/assets/images/propel10.png"></a>
-<br><br>
+The next page will list all the selected storage and application nodes with their resource limits: "HugePages, CPU, and Memory". Click on <b>Next</b>
 
 Verify all the nodes selected for Storage and Application and click on <b>Apply</b>.
 <br><br>
-<a href="/assets/images/propel11.png" target="_blank"><img class="image-with-border" src="/assets/images/propel11.png"></a>
+<a href="/assets/images/KuberaPropel/VerifyAndApply.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/VerifyAndApply.png"></a>
 <br><br>
-
 <br><br>
 <a href="/assets/images/propel12.png" target="_blank"><img class="image-with-border" src="/assets/images/propel12.png"></a>
 <br><br>
@@ -117,7 +114,7 @@ Click on <b>Add Storage Class</b>
 
 * While creating the Storage Class, you can select the number of replicas required from the drop-down menu.
 
-* The protocol can be selected as well from the same tab in the drop-down menu. ISCSI is the required protocol so you can select that.
+* The protocol can be selected as well from the same tab in the drop-down menu.
 
 * The specific filesystem can be selected as well from the drop-down menu like “XFS”
 

@@ -9,7 +9,7 @@ versions:
 ---
 Kubera Propel supports teaming feature. This feature gives the ability for multiple users to work under the same project. Thereby, providing easy access to multiple projects in an organization, which helps in managing multiple projects with ease. 
 
-Click on <b>Setiings</b> tab on the left sidebar. 
+Click on <b>Settings</b> tab on the left sidebar. 
 <br><br>
 <a href="/assets/images/KuberaPropel/Teaming/1.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/Teaming/1.png"></a>
 <br><br>
@@ -40,5 +40,5 @@ The invitee gets an option to accept or decline the invite, from the <b>Invitati
 
 To switch between multiple projects click on the profile section on the top left corner. This opens up a drop down menu displaying all your projects. Click on the project name to switch to the desired project.
  <br><br>
-<a href="/assets/images/KuberaPropel/Teaming/7.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/Teaming/7.png"></a>
+<a href="/assets/images/KuberaPropel/Teaming/DropDown.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/Teaming/DropDown.png"></a>
 <br><br>
