@@ -15,7 +15,7 @@ The subscription(s) can be managed only by the project admin.
 ### Kubera Enterprise is FREE
 
 FREE for basic usage. Subscriptions are applied per each Kubera Enterprise installation. Each Kubera Enterprise comes with a free forever tier for basic usage and community support. When you install Kubera, a free subscription is auto-installed which is valid for 15 days from the date of installation. 
-<a href="/assets/images/enterprise/TrialSubscriptionActive.png" target="_blank"><img class="image-with-border" src="/assets/images/enterprise/TrialSubscriptionActive.png"></a>
+<a href="/assets/images/enterprise/Subscription.png" target="_blank"><img class="image-with-border" src="/assets/images/enterprise/Subscription.png"></a>
 <br><br>
 Subscription pricing details can be found on the MayaData <a href="https://mayadata.io/get-pricing" target="_blank">pricing page</a>.
 
