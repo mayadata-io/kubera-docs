@@ -147,4 +147,4 @@ To delete,
 <pre>kubectl delete namespace mayastor</pre></li>
 </ul>
 
-To delete the entire Kubera Enterprise setup, follow the steps mentioned under [Uninstaling Kubera](/en/free-pro-team@latest/kubera-enterprise/Uninstalling)section.
+To delete the entire Kubera Enterprise setup, follow the steps mentioned under <a href="/en/free-pro-team@latest/kubera-enterprise/Uninstalling" target="_blank">Uninstaling Kubera</a> section.

@@ -35,4 +35,4 @@ To delete the PVCs, execute:
 <li>For setups where the storage class was deployed manually, delete the created storage class.</li>
 </ul>
 </blockquote>
-The above mentioned steps only clean up Kubera Enterprise resources. In case, the setup also contains Kubera Propel follow <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/uninstalling" target="_blank">Kubera Propel uninstallation</a> section.  
+The above mentioned steps only clean up Kubera Enterprise resources. In case, the setup also contains Kubera Propel follow <a href="/en/free-pro-team@latest/kubera-propel/uninstalling" target="_blank">Kubera Propel uninstallation</a> section.  

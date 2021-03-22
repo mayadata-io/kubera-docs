@@ -11,9 +11,9 @@ versions:
 
 To configure your storage on this Kubernetes cluster, click on <b>Configure Storage on this Kubernetes cluster</b> card present on the right side of your screen.
 <br><br>
-<a href="/assets/images/propel6_new.png" target="_blank"><img class="image-with-border" src="/assets/images/propel6_new.png"></a>
+<a href="/assets/images/KuberaPropel/PropelHomePage.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/PropelHomePage.png"></a>
 <br><br>
-* Kubera Propel gives the option to segregate storage and application Nodes.
+* Kubera Propel gives the option to segregate storage and application nodes.
 
 * Select the Nodes button which will help you in configuring your Storage Nodes and Application nodes.
 
@@ -144,4 +144,4 @@ mayastor-nvmf-209dg   io.openebs.csi-mayastor   Delete          Immediate       
 <br><br>
 <a href="/assets/images/propel16.png" target="_blank"><img class="image-with-border" src="/assets/images/propel16.png"></a>
 <br><br>
-This Storage Class can be used to <a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/kubera-propel/deploying-a-sample-application" target="_blank">provision application(s)</a>.
+This Storage Class can be used to <a href="/en/free-pro-team@latest/kubera-propel/deploying-a-sample-application" target="_blank">provision application(s)</a>.

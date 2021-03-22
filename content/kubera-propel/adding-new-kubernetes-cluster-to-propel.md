@@ -13,18 +13,15 @@ versions:
 
 * Go to <b>Clusters tab</b> and then click on <b>Manage clusters</b>. Here you can either select an existing cluster or you can add a new  cluster. 
 <br><br>
-<a href="/assets/images/ManageCluster.png" target="_blank"><img class="image-with-border" src="/assets/images/ManageCluster.png"></a>
+<a href="/assets/images/KuberaPropel/ManageCluster.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/ManageCluster.png"></a>
 <br><br>
 * Click on <b>Add cluster</b> to add a new cluster to the existing list of clusters.
 <br><br>
-<a href="/assets/images/propel2.png" target="_blank"><img class="image-with-border" src="/assets/images/propel2.png"></a>
-<br><br>
-<br><br>
-<a href="/assets/images/propel3.png" target="_blank"><img class="image-with-border" src="/assets/images/propel3.png"></a>
+<a href="/assets/images/KuberaPropel/DeployAgent.png" target="_blank"><img class="image-with-border" src="/assets/images/KuberaPropel/DeployAgent.png"></a>
 <br><br>
 <br><br>
 * To connect new agents to your portal, follow the below mentioned steps:
-  - Go to your terminal and download Kuberactl latest binaries. To get Kuberactl binaries execute the below-mentioned command based your OS-
+  - Go to your terminal and download Kuberactl latest binaries. To get Kuberactl binaries execute the below-mentioned command based your OS-<br>
 For Linux(64 bit),
 <pre>wget http://asset.mayadata.io/kuberactl/latest/kuberactl_latest_Linux_x86_64.tar.gz
 </pre>
@@ -63,4 +60,4 @@ After verification of these details you can proceed with registration of the age
 
 
 
-* For the next steps, see <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/benchmarking-your-storage">Benchmarking your storage</a> . 
+* For the next steps, see <a href="/en/free-pro-team@latest/kubera-propel/benchmarking-your-storage" target="_blank">Benchmarking your storage</a> . 

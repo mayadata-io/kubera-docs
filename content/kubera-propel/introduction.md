@@ -8,7 +8,7 @@ versions:
   free-pro-team: '*'
 ---
 
-Kubera Propel is a component of  [OpenEBS](https://openebs.io/) and is actively developed and maintained by [MayaData](https://mayadata.io/), as part of the Kubera platform for data agility. Kubera Propel is based upon the CNCF project OpenEBS. OpenEBS Mayastor is an open source Container Attached Storage - a pattern that includes the use of Kubernetes itself as a control plane for storage to deliver per workload storage. Teams and workloads that have different needs can use OpenEBS in different ways - and can remain loosely coupled; this is extremely different from traditional shared everything storage.  Kubera Propel is perhaps best known due to multiple benchmarks in the Fall of 2020  indicating that it is extremely performant, highly available with low overhead abstraction, and appears to be the lowest latency widely deployed storage software available for Kubernetes.  
+Kubera Propel is a component of  <a href="https://openebs.io/" target="_blank">OpenEBS</a> and is actively developed and maintained by <a href="https://mayadata.io/" target="_blank">MayaData</a>, as part of the Kubera platform for data agility. Kubera Propel is based upon the CNCF project OpenEBS. OpenEBS Mayastor is an open source Container Attached Storage - a pattern that includes the use of Kubernetes itself as a control plane for storage to deliver per workload storage. Teams and workloads that have different needs can use OpenEBS in different ways - and can remain loosely coupled; this is extremely different from traditional shared everything storage.  Kubera Propel is perhaps best known due to multiple benchmarks in the Fall of 2020  indicating that it is extremely performant, highly available with low overhead abstraction, and appears to be the lowest latency widely deployed storage software available for Kubernetes.  
 
 
 
@@ -38,4 +38,4 @@ Storage performance tuning is hard. Propel provides an easy to use interface to 
 
 
 
-To get started Today with Kubera Propel, see the [quickstart](https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/getting-started-with-kubera-propel) article.
+To get started Today with Kubera Propel, see the <a href="/en/free-pro-team@latest/kubera-propel/getting-started-with-kubera-propel" target="_blank">quickstart</a> article.

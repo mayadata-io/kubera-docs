@@ -23,7 +23,7 @@ Subscription pricing details can be found on the MayaData <a href="https://mayad
 
 After installing Kubera Enterprise, you will need to obtain a non-expiring free subscription at <a href="https://vendor.mayadata.io" target="_blank">vendor.mayadata.io</a>. Below steps describe the procedure to obtain and install the free subscription.
 
-- Install Kubera Enterprise either in a <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/quickstart" targte="_blank">regular</a> or <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/Air-Gapped-environments" target="_blank">air-gapped</a> environment
+- Install Kubera Enterprise either in a <a href="/en/free-pro-team@latest/kubera-enterprise/quickstart" target="_blank">regular</a> or <a href="/en/free-pro-team@latest/kubera-enterprise/Air-Gapped-environments" target="_blank">air-gapped</a> environment
 - Obtain the Kubera ID from the <b>Subscription</b> section
 <a href="/assets/images/enterprise/kuberaID.png" target="_blank"><img class="image-with-border" src="/assets/images/enterprise/kuberaID.png"></a>
 <br><br>

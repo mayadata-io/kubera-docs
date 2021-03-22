@@ -91,7 +91,7 @@ To create a new namespace, execute:
 <pre>kubectl create ns kubera</pre>
 </li>
 <li>Next, execute the below-mentioned command to install Kubera with default values, 
-or to install with domain and HTTPS <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-enterprise/installation-with-tls" target="_blank">Click here</a>.
+or to install with domain and HTTPS <a href="/en/free-pro-team@latest/kubera-enterprise/installation-with-tls" target="_blank">Click here</a>.
 
 <pre>helm install kubera kubera/kubera-enterprise -n kubera</pre>
 <br>
@@ -186,6 +186,5 @@ Password- kubera
 After changing the default credentials, your Kubera Enterprise is ready for basic use. For the next steps, see
 
 - Configuring [HTTPS for Kubera Enterprise](installation-with-tls)
-- Configuring [GitHub social authentication](ghauth)
 - Onboarding [users](User-management)
 
