@@ -42,7 +42,7 @@ The steps in this document walk you through the process of installing Kubera Ent
 
 
 *   Download and copy the kubera-charts zip file to the target cluster. You can download the zip file and then copy it to the target cluster.
-*   To download the zip file visit [https://github.com/mayadata-io/kubera-charts](https://github.com/mayadata-io/kubera-charts) and refer to the screenshot below.
+*   To download the zip file visit this <a href="https://github.com/mayadata-io/kubera-charts" target="_blank">GitHub page</a> and refer to the screenshot below.
 
     
 
@@ -220,13 +220,15 @@ kubera-mongodb                              ClusterIP      10.107.93.241    <non
 </pre>
 
 <br><br>
-<a href="/assets/images/Airgap2.png" target="_blank"><img class="image-with-border" src="/assets/images/Airgap2.png"></a>
+<a href="/assets/images/enterprise/LoginScreen.png" target="_blank"><img class="image-with-border" src="/assets/images//enterprise/LoginScreen.png"></a>
 <br><br>
 
 
-
+<blockquote>
+<b>NOTE:</b><br>
 The default credentials are
 
-Username: admin 
+Username: <b>admin</b> <br>
+Password: <b>kubera</b>
 
-Password: kubera
+</blockquote>

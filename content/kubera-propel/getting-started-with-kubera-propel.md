@@ -16,7 +16,7 @@ versions:
 - Raw disks must be attached(preferably NVMe disks).
 - A total of 1024 HugePages. To know the detailed steps to enable HugePage support click <a href="https://mayastor.gitbook.io/introduction/quickstart/preparing-the-cluster#configure-mayastor-nodes-msns" target="_blank">here</a>. 
 <hr>
-To get started with Kubera Propel, login to <u><a href="https://kubera-docs.mayadatastaging.io/en/free-pro-team@latest/kubera-enterprise/quickstart#accessing-kubera" target="_blank">Kubera</a></u> and click on <b>Start Kubera Propel</b>. This activates the Kubera Propel portal based on your subscription plan, or for new users begins a trial plan.
+To get started with Kubera Propel, login to <u><a href="/en/free-pro-team@latest/kubera-enterprise/quickstart#accessing-kubera" target="_blank">Kubera</a></u> and click on <b>Start Kubera Propel</b>. This activates the Kubera Propel portal based on your subscription plan, or for new users begins a trial plan.
 <br><br>
 <a href="/assets/images/propel_main.png" target="_blank"><img class="image-with-border" src="/assets/images/propel_main.png"></a>
 <br><br> 
@@ -43,10 +43,10 @@ You will now be redirected to the Kubera Propel home screen.
 <a href="/assets/images/PropelLandingPage.png" target="_blank"><img class="image-with-border" src="/assets/images/PropelLandingPage.png"></a>
 <br><br>
 
-You are all set to use Kubera Propel. You can either configure storage on this Kubernetes cluster or <a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel" target="_blank">deploy a new agent</a>.<br>
+You are all set to use Kubera Propel. You can either configure storage on this Kubernetes cluster or <a href="/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel" target="_blank">deploy a new agent</a>.<br>
 For the next steps, see
 <ul>
-<li><a href="https://kubera-docs.mayadata.io/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel">Configure Nodes, Pools and Storage Class</a></li>
-<li><a href="http://localhost:4000/en/free-pro-team@latest/kubera-propel/configure-storage-nodes#a-sample-mysql-application-utilising-the-above-created-storage-class" target="_blank">Deploying a sample application using the above Storage Class</a></li>
+<li><a href="/en/free-pro-team@latest/kubera-propel/adding-new-kubernetes-cluster-to-propel" target="_blank">Configure Nodes, Pools and Storage Class</a></li>
+<li><a href="/en/free-pro-team@latest/kubera-propel/configure-storage-nodes#a-sample-mysql-application-utilising-the-above-created-storage-class" target="_blank">Deploying a sample application using the above Storage Class</a></li>
 </ul>
 
